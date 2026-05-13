@@ -1,0 +1,38 @@
+/* Aqui abaixo virão os @imports */
+
+
+/* Aqui são as variáveis de cores globais */
+:root{
+    --cor-orange: #FFC35C;
+    --cor-red: #F2203E;
+    --cor-blue: #11367A;
+    --cor-purple: #4533CD;
+}
+
+/* Essa propriedade abaixo serve para pré-configurar a renderização web em qualquer navegador */
+
+
+/* #region Padronização: p, h1, h2, h3*/
+p, h1, h2, h3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    font-size: 16px;
+}
+/* #endregion */
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Não mexer nesse body */
+body{
+    background-color: var(--cor-blue);
+    
+}
+
+
+
