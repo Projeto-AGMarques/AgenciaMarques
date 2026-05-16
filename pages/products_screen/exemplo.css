@@ -19,11 +19,16 @@
         margin-right: auto; /*Centraliza o bloco de avaliações horizontalmente*/
     }
 
-    .avaliações .produto {
-        margin: 10px auto; /*Adiciona margem entre os produtos e centraliza cada produto individualmente*/
-        width: fit-content; /*Faz com que cada produto ocupe apenas o espaço necessário para seu conteúdo, evitando que eles se estiquem para preencher o espaço disponível*/
+    .avaliações p {
+        margin: 0; /*Remove a margem padrão dos parágrafos dentro das avaliações*/
     }
     
+.produto{
+    padding: 30px;
+     margin: 10px auto; /*Adiciona margem entre os produtos e centraliza cada produto individualmente*/
+     width: 100% /*Define a largura do produto para ocupar toda a largura disponível, mas com margem automática para centralizar*/
+    }
+
     /*Selecionar produto e ele se expande e o foco e ele*/
     .avaliações:hover {
         box-shadow: 4px 4px 10px rgba(0,0,0,0.5); /*Aumenta a sombra ao passar o mouse, isso dá um efeito de destaque para a avaliação selecionada*/
@@ -31,8 +36,8 @@
         transform: scale(1.02); 
             }
 
-    .avaliações img{
-        width: 300px;
+    .img_produto{
+        width: 200px;
         height: auto;
         margin-top: 10px;
         border-radius: 20px;
@@ -40,7 +45,6 @@
         border-width: 2px;
         border-color: #ccc;
         margin: auto; /*Centraliza a imagem dentro do produto*/ 
-
     }
 
 .stars{
@@ -53,7 +57,14 @@
 .star{
     width: 25px;
     height: 25px;
+    padding: 10px;
     background-color: orange;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 
+/*Imagem perfil*/
+.img_perfil{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
