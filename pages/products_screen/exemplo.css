@@ -1,1 +1,59 @@
-@import "../../global/global.css"
+@import "../../global/global.css" ;
+
+.titular{
+        display: flex;
+        gap: 20px;
+        justify-content: center; /*Centraliza os produtos horizontalmente*/
+    }
+
+   .avaliações {
+        justify-content: center; /*Centraliza as estrelas horizontalmente*/
+        gap: 5px; /*Adiciona espaço entre as estrelas*/
+        margin-top: 10px;
+        background-color: #e0e0e0;
+        border-radius: 20px;
+        padding: 20px;
+        width:fit-content;
+        box-sizing:border-box;
+        margin-left: auto; /*Centraliza o bloco de avaliações horizontalmente*/
+        margin-right: auto; /*Centraliza o bloco de avaliações horizontalmente*/
+    }
+
+    .avaliações .produto {
+        margin: 10px auto; /*Adiciona margem entre os produtos e centraliza cada produto individualmente*/
+        width: fit-content; /*Faz com que cada produto ocupe apenas o espaço necessário para seu conteúdo, evitando que eles se estiquem para preencher o espaço disponível*/
+    }
+    
+    /*Selecionar produto e ele se expande e o foco e ele*/
+    .avaliações:hover {
+        box-shadow: 4px 4px 10px rgba(0,0,0,0.5); /*Aumenta a sombra ao passar o mouse, isso dá um efeito de destaque para a avaliação selecionada*/
+        transition: box-shadow 0.3s ease; /*Adiciona uma transição suave ao passar o mouse*/
+        transform: scale(1.02); 
+            }
+
+    .avaliações img{
+        width: 300px;
+        height: auto;
+        margin-top: 10px;
+        border-radius: 20px;
+        border-style:solid;
+        border-width: 2px;
+        border-color: #ccc;
+        margin: auto; /*Centraliza a imagem dentro do produto*/ 
+
+    }
+
+.stars{
+    display: flex;
+    gap: 5px;
+    justify-content: center; /*Centraliza as estrelas horizontalmente*/
+}
+
+/*As estrelas*/
+.star{
+    width: 25px;
+    height: 25px;
+    background-color: orange;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
