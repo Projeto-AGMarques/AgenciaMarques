@@ -13,7 +13,8 @@
         background-color: #e0e0e0;
         border-radius: 20px;
         padding: 20px;
-        width:fit-content;
+        height: auto;
+        width: 300px; /*Define a largura do bloco de avaliações para 80% da largura do contêiner pai, permitindo espaço para as margens automáticas centralizarem o bloco*/   
         box-sizing:border-box;
         margin-left: auto; /*Centraliza o bloco de avaliações horizontalmente*/
         margin-right: auto; /*Centraliza o bloco de avaliações horizontalmente*/
@@ -21,13 +22,21 @@
 
     .avaliações p {
         margin: 0; /*Remove a margem padrão dos parágrafos dentro das avaliações*/
+        padding: 10px 0; /*Adiciona espaçamento entre os parágrafos dentro das avaliações*/
     }
     
+small {
+    display: block;
+    text-align: center; /*Centraliza o texto do elemento small horizontalmente*/
+    margin-top: 5px; /*Adiciona um pequeno espaço acima do elemento small para separar do conteúdo acima*/
+padding: 10px;
+}
+
 .produto{
     padding: 30px;
      margin: 10px auto; /*Adiciona margem entre os produtos e centraliza cada produto individualmente*/
      width: 100% /*Define a largura do produto para ocupar toda a largura disponível, mas com margem automática para centralizar*/
-    }
+}
 
     /*Selecionar produto e ele se expande e o foco e ele*/
     .avaliações:hover {
@@ -42,9 +51,12 @@
         margin-top: 10px;
         border-radius: 20px;
         border-style:solid;
-        border-width: 2px;
+        border-width: 3px;
         border-color: #ccc;
-        margin: auto; /*Centraliza a imagem dentro do produto*/ 
+        margin-left: auto;
+        margin-right: auto ;
+        box-sizing: border-box;
+
     }
 
 .stars{
