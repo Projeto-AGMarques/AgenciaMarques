@@ -1,1 +1,46 @@
-@import "../../global/global.css"
+@import "../../global/global.css";
+
+.firstContainer_local {
+    background-color: transparent;
+    width: 100dvw;
+    height: 300px;
+    position: relative;
+    display: flex;
+}
+
+.containerNull_local{
+    width: 40%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    position: relative;
+}
+
+.circleBackgroundTitle_local{
+    width: 250px;
+    height: 250px;
+    background-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--cor-blue-light);
+    border-radius: 50%;
+}
+
+.circleTitle_local{
+    width: 225px;
+    height: 225px;
+    background-color: var(--cor-blue-light);
+    border-width: 10px;
+    border-radius: 50%;
+}
+
+.imgContainer_local{
+    width: 60%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.img_local {
+    width: 100%;
+    height: 100%;
+}
