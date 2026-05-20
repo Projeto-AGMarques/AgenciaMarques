@@ -1,12 +1,16 @@
 @import "../../global/global.css";
 
-.firstContainer_local {
+
+
+.Container_local {
     background-color: transparent;
     width: 100dvw;
     height: 300px;
     position: relative;
     display: flex;
 }
+
+/* #region Primeira Linha do About Local */
 
 .containerNull_local{
     width: 40%;
@@ -57,13 +61,18 @@
     }
 }
 
-.firstContainer_local .imgContainer_local{
+.Container_local .imgContainer_local{
     width: 60%;
     height: 100%;
     background-color: transparent;
 }
 
-.firstContainer_local .img_local {
+.Container_local .img_local {
     width: 100%;
     height: 100%;
 }
+
+/* #endregion */
+
+
+
