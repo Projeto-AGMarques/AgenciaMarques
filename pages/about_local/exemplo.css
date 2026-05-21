@@ -3,11 +3,12 @@
 
 
 .Container_local {
-    background-color: transparent;
+    background-color: red;
     width: 100dvw;
     height: 300px;
     position: relative;
     display: flex;
+    margin-bottom: 10px;
 }
 
 /* #region Primeira Linha do About Local */
@@ -74,5 +75,12 @@
 
 /* #endregion */
 
+/* #region Segunda Linha do About Local */
 
+.Container_local .circleImg_local{
+    width: 100px;
+    height: 100px;
+}
+
+/* #endregion */
 
