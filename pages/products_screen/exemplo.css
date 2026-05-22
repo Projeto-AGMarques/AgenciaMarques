@@ -1,11 +1,12 @@
 @import "../../global/global.css" ;
 
-.slider{
-    position: relative;
-    max-width: 600px;
-    overflow: hidden;
 
+@media (max-width: 768px){
+    .produto-box{
+        flex-direction: column; /*Organiza os produtos em uma coluna vertical em telas menores*/
+    }
 }
+
 
 .buttons{
     position: absolute;
@@ -30,7 +31,7 @@
     align-items: center; /*Centraliza o título horizontalmente*/
     justify-content: center;
     display: flex;
-    flex-direction: column; /*Organiza os produtos em uma coluna vertical*/
+    flex-direction: row; /*Organiza os produtos em uma coluna vertical*/
     gap: 20px; /*Adiciona um espaço de 20px entre os produtos*/
     margin: 0 auto; /*Centraliza o contêiner de produtos horizontalmente*/
     width: 80%; /*Define a largura do contêiner de produtos para 80% da largura do contêiner pai, permitindo espaço para as margens automáticas centralizarem o contêiner de produtos*/
@@ -68,12 +69,11 @@
     margin-top: -20px;
 }
 
-
-.slides{
-    display: none; /*Esconde os slides por padrão, apenas o slide ativo será exibido*/
-    flex-shrink: 0; /*Impede que os slides encolham para caber dentro do contêiner, mantendo seu tamanho original*/
-
-}
+.titulo{
+    display: flex;
+    gap: 20px;
+    justify-content: center; /*Centraliza os produtos horizontalmente*/
+} 
 
 /*imagem do produto*/
 
@@ -149,7 +149,7 @@ margin-bottom: 10px;
 }
 
     /*Selecionar produto e ele se expande e o foco e ele*/
-    .avaliações:hover {
+    .produto-box:hover {
         box-shadow: 4px 4px 10px rgba(0,0,0,0.5); /*Aumenta a sombra ao passar o mouse, isso dá um efeito de destaque para a avaliação selecionada*/
         transition: box-shadow 0.3s ease; /*Adiciona uma transição suave ao passar o mouse*/
         transform: scale(1.02); 
