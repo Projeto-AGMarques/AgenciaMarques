@@ -32,7 +32,8 @@
     justify-content: center;
     display: flex;
     flex-direction: row; /*Organiza os produtos em uma coluna vertical*/
-    gap: 20px; /*Adiciona um espaço de 20px entre os produtos*/
+    flex-wrap: wrap; /*Permite que os produtos quebrem para a próxima linha se não houver espaço suficiente em uma única linha*/
+    gap: 35px 15px; /*Adiciona um espaço de 20px entre os produtos*/
     margin: 0 auto; /*Centraliza o contêiner de produtos horizontalmente*/
     width: 80%; /*Define a largura do contêiner de produtos para 80% da largura do contêiner pai, permitindo espaço para as margens automáticas centralizarem o contêiner de produtos*/
 }
