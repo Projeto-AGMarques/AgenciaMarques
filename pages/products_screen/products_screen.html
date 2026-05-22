@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="exemplo.css">
+    <link rel="script" href="exemplo.js">
 </head>
 <body>
     
@@ -15,8 +16,11 @@
     <h3 class="produtos-titulo">Produtos</h3>
 
 
+<div class="slider">
+
+<div class="slides-num" id="slides-num">
 <!--Caixa produto-->
-<div class="produto-box">
+<div class="produto-box" class="slides">
 
     <div class="avaliações">
 
@@ -43,21 +47,28 @@
 
 <div class="img_box">
 
-<a href="#"><img src="https://images.pexels.com/photos/30946794/pexels-photo-30946794.jpeg" alt="liquidificador" class="img_box"></a>
+<!--Imagem de AJ Ahamad-->
+<a href="#"><img src="https://images.pexels.com/photos/32168944/pexels-photo-32168944.jpeg" class="img_box"></a>
 
 </div>
 
 <!--Container descrição-->
 
 <div class="titulo_descricao">
-<span>Liquidificador</span>
+<span>Microondas</span>
+<p style="font-weight: 300;"><i>SAMSUNG</i></p>
 </div>
 
 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem accusamus quam neque, voluptates perferendis pariatur magnam ut dolore enim saepe assumenda sit, a ipsa cumque adipisci atque reprehenderit porro dignissimos?</p>
+</div> 
 
 </div>
+<div class="buttons">
+<button onclick="changeSlide(-1)">&#10094;</button>
+<button onclick="changeSlide(1)">&#10095;</button>
+</div>
 
-
+</div>
 </section>
 
 

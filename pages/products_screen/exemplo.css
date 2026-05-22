@@ -1,12 +1,39 @@
 @import "../../global/global.css" ;
 
+.slider{
+    position: relative;
+    max-width: 600px;
+    overflow: hidden;
 
+}
+
+.buttons{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%); /*Translata o elemento verticalmente para o centro*/
+}
+
+.buttons button{
+    background-color: rgba(0, 0, 0, 0.5); /*Adiciona um fundo semitransparente para os botões*/
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
 
 .produtos{
     align-items: center; /*Centraliza o título horizontalmente*/
     justify-content: center;
     display: flex;
-    flex-direction: column; /*Organiza o título e os produtos em uma coluna vertical*/  
+    flex-direction: column; /*Organiza os produtos em uma coluna vertical*/
+    gap: 20px; /*Adiciona um espaço de 20px entre os produtos*/
+    margin: 0 auto; /*Centraliza o contêiner de produtos horizontalmente*/
+    width: 80%; /*Define a largura do contêiner de produtos para 80% da largura do contêiner pai, permitindo espaço para as margens automáticas centralizarem o contêiner de produtos*/
 }
 
 .produtos-titulo{    
@@ -25,20 +52,35 @@
     gap: 20px; /*Adiciona um espaço de 20px entre os produtos*/
     justify-content: center; /*Centraliza os produtos horizontalmente*/
     flex-wrap: wrap; /*Permite que os produtos quebrem para a próxima linha se não houver espaço suficiente em uma única linha*/
-    width: 300px; /*Define a largura do contêiner de produtos para 80% da largura do contêiner pai, permitindo espaço para as margens automáticas centralizarem o contêiner de produtos*/
-    margin: 0px 20px; /*Centraliza o contêiner de produtos horizontalmente*/
+    width: 350px; /*Define a largura do contêiner de produtos para 80% da largura do contêiner pai, permitindo espaço para as margens automáticas centralizarem o contêiner de produtos*/
+    margin: 0px 10px; /*Centraliza o contêiner de produtos horizontalmente*/
     background-color: #ccc;
     padding: 15px;
     border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: 10px;
+     box-sizing: border-box; /*Inclui o padding e a borda na largura total
 }
 
-/*imagem*/
+.produto-box p{
+    margin: 10px 0;
+    padding: 5px 10px; /*Adiciona espaçamento entre os parágrafos dentro do produto*/
+    margin-bottom: 2px;
+    margin-top: -20px;
+}
+
+
+.slides{
+    display: none; /*Esconde os slides por padrão, apenas o slide ativo será exibido*/
+    flex-shrink: 0; /*Impede que os slides encolham para caber dentro do contêiner, mantendo seu tamanho original*/
+
+}
+
+/*imagem do produto*/
 
     .img_box{
-        width: 200px;
+        width: 250px;
         height: auto;
-        margin-top: 10px;
+        margin-top: 2px;
         border-radius: 20px;
         border-style:solid;
         border: 3px #ccc;
@@ -47,6 +89,7 @@
         box-sizing: border-box;   
      }
 
+     /*Nome do produto*/
 .titular{
         display: flex;
         gap: 20px;
@@ -61,7 +104,7 @@
         border-radius: 20px;
         padding: 20px;
         height: auto;
-        width: 300px; /*Define a largura do bloco de avaliações para 80% da largura do contêiner pai, permitindo espaço para as margens automáticas centralizarem o bloco*/   
+        width: 280px; /*Define a largura do bloco de avaliações para 80% da largura do contêiner pai, permitindo espaço para as margens automáticas centralizarem o bloco*/   
         box-sizing:border-box;
         margin-left: auto; /*Centraliza o bloco de avaliações horizontalmente*/
         margin-right: auto; /*Centraliza o bloco de avaliações horizontalmente*/
@@ -89,12 +132,14 @@ margin-bottom: 10px;
     text-transform: uppercase; /*Transforma o texto do título em letras maiúsculas para dar um efeito mais impactante*/ 
     color: black;
     text-align: center; /*Centraliza o texto do título horizontalmente*/
+    margin-top: -4px; /*Remove a margem superior do título de descrição para que ele fique mais próximo do produto*/
 }
 
 .titulo_descricao p{
-    margin: 0; /*Remove a margem padrão dos parágrafos dentro do título de descrição*/
-    padding: 10px 0; /*Adiciona espaçamento entre os parágrafos dentro do título de descrição*/
-
+    margin: 10px 0;
+    padding: 5px 4px; /*Adiciona espaçamento entre os parágrafos dentro do título de descrição*/
+    margin-bottom: -20px;
+    margin-top: 2px;
 }
 
 .produto{
