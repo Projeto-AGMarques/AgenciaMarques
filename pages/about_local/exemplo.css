@@ -3,9 +3,9 @@
 
 
 .Container_local {
-    background-color: red;
+    background-color: transparent;
     width: 100dvw;
-    height: 300px;
+    height: fit-content;
     position: relative;
     display: flex;
     margin-bottom: 10px;
@@ -77,10 +77,78 @@
 
 /* #region Segunda Linha do About Local */
 
-.Container_local .circleImg_local{
-    width: 100px;
-    height: 100px;
+#twoContainer{
+    padding: 20px;
+}
+
+.Container_local .textInfo{
+    width: 80%;
+    color: white;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 25px;
+}
+
+.Container_local .containerNull2_local{
+    width: 50%;
+}
+
+#circleNullTwo{
+    width: 200px;
+    height: 200px;
+    top: -50px;
+    right: -30px;
+    background-color: var(--cor-blue-light);
+    justify-items: center;
+    display: flex;
+
+    img{
+        transform: scale(0.8);
+    }
 }
 
 /* #endregion */
 
+/* #region Terceira Linha de Informações */
+
+#threeContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    gap: 20px;
+}
+
+.backgroundMap {
+    background-color: var(--cor-blue-light);
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+}
+
+.backgroundInfos{
+    width: 100%;
+    background-color: burlywood;
+
+}
+
+/* #endregion */
+
+
+
+#fourContainer{
+    /* background-color: orange; */
+    justify-content: center;
+    margin-bottom: 50px;
+
+    button{
+        background-color: var(--cor-orange);
+        padding-inline: 90px;
+        padding-block: 10px;
+        color: white;
+        font-weight: bolder;
+        border-radius: 25px;
+        border-style: none;
+    }
+}
