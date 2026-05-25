@@ -1,12 +1,17 @@
 @import "../../global/global.css";
 
-.firstContainer_local {
+
+
+.Container_local {
     background-color: transparent;
     width: 100dvw;
-    height: 300px;
+    height: fit-content;
     position: relative;
     display: flex;
+    margin-bottom: 10px;
 }
+
+/* #region Primeira Linha do About Local */
 
 .containerNull_local{
     width: 40%;
@@ -24,23 +29,126 @@
     border-style: solid;
     border-color: var(--cor-blue-light);
     border-radius: 50%;
+    position: absolute;
+
 }
 
 .circleTitle_local{
-    width: 225px;
-    height: 225px;
+    width: 95%;
+    height: 95%;
     background-color: var(--cor-blue-light);
-    border-width: 10px;
     border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    h2 {
+        width: 100%;
+        text-align: center;
+        color: white;
+        text-shadow: 1px 1px 10px black;   
+    }
+
+    p{
+        width: 100%;
+        text-align: center;
+        color: white;
+        text-shadow: 1px 1px 10px black;   
+    }
 }
 
-.imgContainer_local{
+.Container_local .imgContainer_local{
     width: 60%;
     height: 100%;
     background-color: transparent;
 }
 
-.img_local {
+.Container_local .img_local {
     width: 100%;
     height: 100%;
+}
+
+/* #endregion */
+
+/* #region Segunda Linha do About Local */
+
+#twoContainer{
+    padding: 20px;
+}
+
+.Container_local .textInfo{
+    width: 80%;
+    color: white;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 25px;
+}
+
+.Container_local .containerNull2_local{
+    width: 50%;
+}
+
+#circleNullTwo{
+    width: 200px;
+    height: 200px;
+    top: -50px;
+    right: -30px;
+    background-color: var(--cor-blue-light);
+    justify-items: center;
+    display: flex;
+
+    img{
+        transform: scale(0.8);
+    }
+}
+
+/* #endregion */
+
+/* #region Terceira Linha de Informações */
+
+#threeContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    gap: 20px;
+}
+
+.backgroundMap {
+    background-color: var(--cor-blue-light);
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+}
+
+.backgroundInfos{
+    width: 100%;
+    background-color: burlywood;
+
+}
+
+/* #endregion */
+
+
+
+#fourContainer{
+    /* background-color: orange; */
+    justify-content: center;
+    margin-bottom: 50px;
+
+    button{
+        background-color: var(--cor-orange);
+        padding-inline: 90px;
+        padding-block: 10px;
+        color: white;
+        font-weight: bolder;
+        border-radius: 25px;
+        border-style: none;
+    }
 }
