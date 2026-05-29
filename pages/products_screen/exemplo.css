@@ -1,9 +1,12 @@
 @import "../../global/global.css" ;
 
 /*Elementos da página*/
+
+
 *, *::before, *::after {
             box-sizing: border-box;
         }
+        
         section {
             overflow: hidden;
             padding: 40px 20px 60px;
@@ -19,7 +22,7 @@
             font-weight: bold;
             font-size: 24px;
             margin: 0;
-            text-transform: uppercase;
+            text-transform: uppercase; /*Deixa o texto em formato maiúsculo*/
             color: #e0e0e0;
             text-align: center;
             letter-spacing: 2px;
@@ -64,21 +67,25 @@
             color: #222;
         }
 
+        /*Foto do perfil de usuário*/
         .img_perfil {
             width: 48px;
             height: 48px;
             border-radius: 50%;
-            object-fit: cover;
-            flex-shrink: 0;
+            object-fit: cover; /*É usado para manter a proporção da imagem dentro do contêiner, sem overflow*/
+            flex-shrink: 0; /*Ajusta o tamanho do elemento para não ser reduzido mesmo se o container for compactado, ele mantem aquele tamanho*/
         }
 
+        /*Componente da data*/
         small {
-            display: block;
-            text-align: center;
+            display: block; /*Esse elemento faz com que seja ocupado todo espaço disponível verticalmente*/
+            text-align: center; /*Ajuda o elemento a ser centralizado, juntamente do block, assim ele não fica em inline*/
             color: #666;
             font-size: 12px;
             margin: 6px 0 10px;
         }
+
+        /*As estrelas, o conjunto*/
 
         .stars {
             display: flex;
@@ -89,26 +96,29 @@
             padding: 0;
         }
 
+        /*Cada estrela individualmente*/
         .star {
             width: 20px;
             height: 20px;
             background-color: orange;
-            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); /*Cálculo das coordenadas da estrela*/
         }
 
+        /*Container da imagem*/
         .img_box {
             width: 100%;
             height: auto;
             border-radius: 12px;
             display: block;
-            overflow: hidden;
+            overflow: hidden; /*Evita que a imagem transborda do contêiner*/
             margin-bottom: 10px;
         }
 
+        /*A imagem*/
          .img_box img {
             width: 100%;
             height: 160px;
-            object-fit: cover;
+            object-fit: cover; /* Mantém a proporção da imagem dentro do contêiner */
             border-radius: 12px;
             display: block;
         }
@@ -137,7 +147,7 @@
             color: #555;
         }
 
-        /*O > p é usado para o texto das avaliações*/
+        /*P é o elemento filho direto das avaliações*/
         .avaliações > p {
             font-size: 13px;
             color: #444;
