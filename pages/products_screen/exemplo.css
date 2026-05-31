@@ -1,8 +1,8 @@
 @import "../../global/global.css" ;
 
 /*Elementos da página*/
-
-
+/*Esse asterisco seleciona todos os elementos da página*/
+/*Adiciona antes e depois */
 *, *::before, *::after {
             box-sizing: border-box;
         }
@@ -12,6 +12,7 @@
             padding: 40px 20px 60px;
         }
 
+        /*Título da seção, "Avaliações de Produtos" */
         .titulo {
             display: flex;
             justify-content: center;
@@ -49,15 +50,19 @@
         }
         .avaliações:hover {
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-            transform: translateY(-5px);
+            transform: translateY(-5px); /*Leve ele para cima, dando a sensação de que está flutuando*/
         }
 
+            /*Container do perfil do usuário e nome*/
         .titular {
             display: flex;
             align-items: center;
             gap: 12px;
             justify-content: center;
             margin-bottom: 4px;
+            background-color: #ccc;
+            border-radius: 12px;
+            padding: 8px 16px;
         }
 
          .titular h2 {
@@ -104,7 +109,7 @@
             clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); /*Cálculo das coordenadas da estrela*/
         }
 
-        /*Container da imagem*/
+        /*Container da imagem do produto*/
         .img_box {
             width: 100%;
             height: auto;
@@ -123,15 +128,18 @@
             display: block;
         }
 
+        /*Área clicável maior*/
         .img_box a {
             display: block;
         }
 
+        /*Div do nome e da marca*/
          .titulo_descricao {
             text-align: center;
             margin: 8px 0 4px;
         }
 
+        /*Nome do produto*/
         .titulo_descricao span {
             font-weight: bold;
             font-size: 15px;
@@ -139,9 +147,8 @@
             color: #111;
         }
 
-
          .titulo_descricao p {
-            margin: 2px 0 0;
+            margin: 2px 0 0; /*É a mesma coisa que margin-top: 2px; margin-right: 0; margin-bottom: 0; margin-left: 0;*/
             font-size: 13px;
             font-weight: 300;
             color: #555;
@@ -165,9 +172,9 @@
             font-size: 14px;
             border-radius: 8px;
             position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 10;
+            top: 50%; /*Metada a altura do pai conteiner*/
+            transform: translateY(-50%); /*Desloca o elemento 50% da sua própria altura para cima*/
+            z-index: 10; /*Empilha o elemento acima dos outros*/
             transition: background-color 0.2s ease;
         }
 
@@ -178,7 +185,7 @@
         .glider-next { 
             right: -10px; 
         }
-
+/*Efeito do mouse sobre os botões*/
         .glider-prev:hover,.glider-next:hover {
             background-color: #CE7DA5;
         }

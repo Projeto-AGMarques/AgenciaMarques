@@ -27,9 +27,9 @@
 }
 
 .glider {
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: none
+    overflow-y: hidden; /*Ele proibe que o conteúdo ultrapasse os limites do contêiner*/
+    -webkit-overflow-scrolling: touch; /*Especifica o comportamento de rolagem para dispositivos móveis, principalmente Safari e iOS*/
+    -ms-overflow-style: none /*Esconde as barras de rolagem no Internet Explorer e Edge*/
 }
 
 .glider-track {
@@ -136,7 +136,7 @@
 .glider-dot:hover {
     background: #ddd
 }
-
+/*Quando o dot está ativo, selecionado*/
 .glider-dot.active {
     background: #a89cc8
 }
