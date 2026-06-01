@@ -1,14 +1,4 @@
-export default class Cachorro { // SuperEntidade
-    Latir() {
-        console.log("Auau");
-        
-    }
-}
+const slides = document.getElementsByClassName("slides");
+const slidesNum = document.getElementById("slides-num");
+let currentSlide = 0;
 
-class Pessoa extends Cachorro { // SubEntidade
-    
-}
-
-let pessoa = new Pessoa()
-
-pessoa.Latir()
