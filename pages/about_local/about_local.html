@@ -6,62 +6,84 @@
     <title>Document</title>
     <link rel="stylesheet" href="exemplo.css">
 </head>
-<body>
+<body style="overflow-x: hidden;">
     <section>
-        <!-- Primeira Row -->
-        <div class="Container_local">
+        <div class="ShowMobile_local">
+            <!-- Primeira Row -->
+            <div class="Container_local" id="firstContainer">
 
-            <!-- Espaço / Bola -->
-            <div class="containerNull_local">
-                <div class="circleBackgroundTitle_local">
-                    <div class="circleTitle_local">
-                        <h2>NOSSA UNIDADE</h2>
-                        <p>Aqui você retirar seu pedido!</p>
+                <!-- Espaço / Bola -->
+                <div class="containerNull_local">
+                    <div class="circleBackgroundTitle_local">
+                        <div class="circleTitle_local">
+                            <h2>NOSSA UNIDADE</h2>
+                            <p>Aqui você retirar seu pedido!</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Imagem -->
-            <div class="imgContainer_local"> 
-                <img src="./photoLocal.png" alt="" class="img_local">
-            </div>
-        </div>
-
-        <div class="Container_local" id="twoContainer">
-            <!-- Aqui está o texto sobre o local -->
-            <p class="textInfo">
-                A Marques Magazini está localizada junto à loja da família, em um espaço estratégico que reúne estoque, atendimento e operações das vendas online. Atualmente, o foco da marca é oferecer praticidade e qualidade no atendimento digital, com planos futuros para um espaço exclusivo e totalmente dedicado à empresa.
-            </p>
-
-            <div class="containerNull2_local">
-                <div class="circleBackgroundTitle_local" id="circleNullTwo">
-                    <img src="./Ellipse 2.svg" alt="">
+                <!-- Imagem -->
+                <div class="imgContainer_local"> 
+                    <img src="./photoLocal.png" alt="" class="img_local">
                 </div>
             </div>
+            
+            <!-- Segunda Row -->
+            <div class="Container_local" id="twoContainer">
+                <!-- Aqui está o texto sobre o local -->
+                <p class="textInfo">
+                    A Marques Magazini está localizada junto à loja da família, em um espaço estratégico que reúne estoque, atendimento e operações das vendas online. 
+                </p>
 
-        </div>
+                <div class="containerNull2_local">
+                    <div class="circleBackgroundTitle_local" id="circleNullTwo">
+                        <img src="./Ellipse 2.svg" alt="">
+                    </div>
+                </div>
 
-        <div class="Container_local" id="threeContainer">
-            <div class="backgroundMap">
-                <iframe
-                    src="https://www.google.com/maps?q=R. Daniel de Oliveira Carvalho, 385 - 399-301&output=embed"
-                    allowfullscreen
-                    loading="lazy"
-                    style="border-radius: 25px; width: 100%; height: 100%;">
-                </iframe>
             </div>
-            <div class="backgroundInfos">
-                <p>Teste</p>
-                <p>Teste</p>
-                <p>Teste</p>
+            <div class="Container_local" id="textUnique">
+                <p class="textInfo" id="unique_local">
+                Atualmente, o foco da marca é oferecer praticidade e qualidade no atendimento digital, com planos futuros para um espaço exclusivo e totalmente dedicado à empresa.
+                </p>
+            </div>
+
+            <!-- Terceira Row -->
+            <div class="Container_local" id="threeContainer">
+                <div class="backgroundMap">
+                    <iframe
+                        src="https://www.google.com/maps?q=R. Daniel de Oliveira Carvalho, 385 - 399-301&output=embed"
+                        allowfullscreen
+                        loading="lazy"
+                        style="border-radius: 25px; width: 100%; height: 100%;">
+                    </iframe>
+                </div>
+                <div class="backgroundInfos">
+                    <div class="lineInfo_local">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+                        <p>R. Daniel de Oliveira Carvalho, 385 - <br/>Vila Daniel | <br/>Porto Ferreira-SP</p>
+                    </div>
+
+                    <div class="lineInfo_local">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"/></svg>
+                        <p>DiAS ÚTEIS<br/>08H ÀS 18H</p> 
+                    </div>  
+
+                    <div class="lineInfo_local">
+                        <svg xmlns="http://www.w3.org/2000/svg" style="transform: rotate(90deg);" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="M162-120q-18 0-30-12t-12-30v-162q0-13 9-23.5t23-14.5l138-28q14-2 28.5 2.5T342-374l94 94q38-22 72-48.5t65-57.5q33-32 60.5-66.5T681-524l-97-98q-8-8-11-19t-1-27l26-140q2-13 13-22.5t25-9.5h162q18 0 30 12t12 30q0 125-54.5 247T631-329Q531-229 409-174.5T162-120Zm556-480q17-39 26-79t14-81h-88l-18 94 66 66ZM360-244l-66-66-94 20v88q41-3 81-14t79-28Zm358-356ZM360-244Z"/></svg>
+                        <p>CONTATO: <br/>(19) 99232-8081</p>
+                    </div>    
+
+                </div>
+            </div>
+            
+            <div class="Container_local" id="fourContainer">
+                <a href="https://www.google.com/maps?ll=-21.859416,-47.484038&z=15&t=m&hl=pt-BR&gl=US&mapclient=embed&q=R.+Daniel+de+Oliveira+Carvalho,+385+-+Vila+Daniel+Porto+Ferreira+-+SP+13660-164">
+                    ABRIR O GOOGLE MAPS
+                </a>
             </div>
         </div>
-        
-        <div class="Container_local" id="fourContainer">
-            <button>ABRIR O GOOGLE MAPS</button>
-        </div>
-
-
+    <h1 class="Warning_local">Em Desenvolvimento...</h1>
     </section>
 </body>
 </html>

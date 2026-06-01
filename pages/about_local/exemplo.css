@@ -1,6 +1,8 @@
 @import "../../global/global.css";
 
-
+.Warning_local{
+    display: none;
+}
 
 .Container_local {
     background-color: transparent;
@@ -8,7 +10,6 @@
     height: fit-content;
     position: relative;
     display: flex;
-    margin-bottom: 10px;
 }
 
 /* #region Primeira Linha do About Local */
@@ -16,7 +17,6 @@
 .containerNull_local{
     width: 40%;
     height: 100%;
-    background-color: transparent;
     display: flex;
     position: relative;
 }
@@ -46,21 +46,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    h2 {
-        width: 100%;
-        text-align: center;
-        color: white;
-        text-shadow: 1px 1px 10px black;   
-    }
-
-    p{
-        width: 100%;
-        text-align: center;
-        color: white;
-        text-shadow: 1px 1px 10px black;   
-    }
+}    
+.circleTitle_local h2 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 10px black;   
 }
+
+.circleTitle_local p{
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 10px black;   
+}
+
 
 .Container_local .imgContainer_local{
     width: 60%;
@@ -78,15 +78,26 @@
 /* #region Segunda Linha do About Local */
 
 #twoContainer{
-    padding: 20px;
+    padding-inline: 20px;
+    /* background-color: red; */
+}
+
+#textUnique{
+    padding-inline: 20px;
+    margin-bottom: 10px;
 }
 
 .Container_local .textInfo{
-    width: 80%;
+    width: 55%;
     color: white;
-    text-align: left;
-    font-size: 1.1rem;
+    text-align: justify;
+    font-size: clamp(0.5rem, 1rem, 1.5rem);
     line-height: 25px;
+    /* background-color: red; */
+}
+
+#unique_local{
+    width: 100%;
 }
 
 .Container_local .containerNull2_local{
@@ -113,12 +124,14 @@
 
 #threeContainer{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 10px;
-    gap: 20px;
+    grid-template-columns: 1fr 3fr;
+    padding: 5Px;
+    gap: 5px;
+    /* background-color: green; */
 }
 
 .backgroundMap {
+    /* background-color: red; */
     background-color: var(--cor-blue-light);
     width: 200px;
     height: 200px;
@@ -128,27 +141,75 @@
 }
 
 .backgroundInfos{
+    /* background-color: burlywood; */
     width: 100%;
-    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
+.backgroundInfos .lineInfo_local{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1px;
+    /* background-color: yellow; */
+    align-items: center;
+
+    svg{
+        align-self: center;
+        /* background-color: red; */
+    }
+
+    p{
+        font-size: 15px;
+        color: white;
+        font-weight: bolder;
+        /* background-color: red; */
+    }
 }
 
 /* #endregion */
 
-
-
 #fourContainer{
     /* background-color: orange; */
     justify-content: center;
+    margin-top: 15px;
     margin-bottom: 50px;
 
-    button{
+    a{
         background-color: var(--cor-orange);
-        padding-inline: 90px;
+        padding-inline: 70px;
         padding-block: 10px;
         color: white;
         font-weight: bolder;
         border-radius: 25px;
         border-style: none;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+    }
+
+    a:active{
+        color: black;
+        background-color: rgb(97, 63, 0);
+    }
+
+    a:hover{
+        transform: scale(1.1);
     }
 }
+
+
+/* #region Responsivo Web */
+@media (min-width: 768px) {
+    .ShowMobile_local{
+        display: none;
+    }
+
+    .Warning_local{
+        display: block;
+        color: white;
+        justify-self: center;
+        margin-top: 20dvw;
+    }
+}
+/* #endregion */
