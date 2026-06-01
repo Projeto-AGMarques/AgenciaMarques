@@ -1,1 +1,180 @@
-@import "../../global/global.css"
+@import "../../global/global.css" ;
+
+
+@media (max-width: 768px){
+    .produto-box{
+        flex-direction: column; /*Organiza os produtos em uma coluna vertical em telas menores*/
+    }
+}
+
+
+.buttons{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%); /*Translata o elemento verticalmente para o centro*/
+}
+
+.buttons button{
+    background-color: rgba(0, 0, 0, 0.5); /*Adiciona um fundo semitransparente para os botões*/
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.produtos{
+    align-items: center; /*Centraliza o título horizontalmente*/
+    justify-content: center;
+    display: flex;
+    flex-direction: row; /*Organiza os produtos em uma coluna vertical*/
+    flex-wrap: wrap; /*Permite que os produtos quebrem para a próxima linha se não houver espaço suficiente em uma única linha*/
+    gap: 35px 15px; /*Adiciona um espaço de 20px entre os produtos*/
+    margin: 0 auto; /*Centraliza o contêiner de produtos horizontalmente*/
+    width: 80%; /*Define a largura do contêiner de produtos para 80% da largura do contêiner pai, permitindo espaço para as margens automáticas centralizarem o contêiner de produtos*/
+}
+
+.produtos-titulo{    
+    font-weight: bold; /*Deixa o título em negrito para destacá-lo ainda mais*/
+    font-size: 24px; /*Aumenta o tamanho da fonte do título para torná-lo mais proeminente*/
+    margin: 50px 0; /*Adiciona uma margem inferior para separar o título do conteúdo abaixo*/
+    text-transform: uppercase; /*Transforma o texto do título em letras maiúsculas para dar um efeito mais impactante*/ 
+    color:#e0e0e0;
+    text-align: center; /*Centraliza o texto do título horizontalmente*/
+
+}
+
+.produto-box{
+    display: flex;
+    flex-direction: row; /*Organiza os produtos em uma linha horizontal*/
+    gap: 20px; /*Adiciona um espaço de 20px entre os produtos*/
+    justify-content: center; /*Centraliza os produtos horizontalmente*/
+    flex-wrap: wrap; /*Permite que os produtos quebrem para a próxima linha se não houver espaço suficiente em uma única linha*/
+    width: 350px; /*Define a largura do contêiner de produtos para 80% da largura do contêiner pai, permitindo espaço para as margens automáticas centralizarem o contêiner de produtos*/
+    margin: 0px 10px; /*Centraliza o contêiner de produtos horizontalmente*/
+    background-color: #ccc;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+     box-sizing: border-box; /*Inclui o padding e a borda na largura total
+}
+
+.produto-box p{
+    margin: 10px 0;
+    padding: 5px 10px; /*Adiciona espaçamento entre os parágrafos dentro do produto*/
+    margin-bottom: 2px;
+    margin-top: -20px;
+}
+
+.titulo{
+    display: flex;
+    gap: 20px;
+    justify-content: center; /*Centraliza os produtos horizontalmente*/
+} 
+
+/*imagem do produto*/
+
+    .img_box{
+        width: 250px;
+        height: auto;
+        margin-top: 2px;
+        border-radius: 20px;
+        border-style:solid;
+        border: 3px #ccc;
+        margin-left: auto;
+        margin-right: auto ;
+        box-sizing: border-box;   
+     }
+
+     /*Nome do produto*/
+.titular{
+        display: flex;
+        gap: 20px;
+        justify-content: center; /*Centraliza os produtos horizontalmente*/
+    }
+
+   .avaliações {
+        justify-content: center; /*Centraliza as estrelas horizontalmente*/
+        gap: 5px; /*Adiciona espaço entre as estrelas*/
+        margin-top: 10px;
+        background-color: #e0e0e0;
+        border-radius: 20px;
+        padding: 20px;
+        height: auto;
+        width: 280px; /*Define a largura do bloco de avaliações para 80% da largura do contêiner pai, permitindo espaço para as margens automáticas centralizarem o bloco*/   
+        box-sizing:border-box;
+        margin-left: auto; /*Centraliza o bloco de avaliações horizontalmente*/
+        margin-right: auto; /*Centraliza o bloco de avaliações horizontalmente*/
+    }
+
+    .avaliações p {
+        margin: 0; /*Remove a margem padrão dos parágrafos dentro das avaliações*/
+        padding: 10px 0; /*Adiciona espaçamento entre os parágrafos dentro das avaliações*/
+    }
+    
+small {
+    display: block; /*Faz com que o elemento small ocupe toda a largura disponível, permitindo que o text-align funcione corretamente*/
+    text-align: center; /*Centraliza o texto do elemento small horizontalmente*/
+    margin-top: 5px; /*Adiciona um pequeno espaço acima do elemento small para separar do conteúdo acima*/
+padding: 10px;
+margin-top: -24px;
+margin-left: 50px;
+margin-bottom: 10px;
+}
+
+.titulo_descricao{
+    font-weight: bold; /*Deixa o título em negrito para destacá-lo ainda mais*/
+    font-size: 18px; /*Aumenta o tamanho da fonte do título para torná-lo mais proeminente*/
+    margin: 10px 0; /*Adiciona uma margem inferior para separar o título do conteúdo abaixo*/
+    text-transform: uppercase; /*Transforma o texto do título em letras maiúsculas para dar um efeito mais impactante*/ 
+    color: black;
+    text-align: center; /*Centraliza o texto do título horizontalmente*/
+    margin-top: -4px; /*Remove a margem superior do título de descrição para que ele fique mais próximo do produto*/
+}
+
+.titulo_descricao p{
+    margin: 10px 0;
+    padding: 5px 4px; /*Adiciona espaçamento entre os parágrafos dentro do título de descrição*/
+    margin-bottom: -20px;
+    margin-top: 2px;
+}
+
+.produto{
+    padding: 30px;
+     margin: 10px auto; /*Adiciona margem entre os produtos e centraliza cada produto individualmente*/
+     width: 100% /*Define a largura do produto para ocupar toda a largura disponível, mas com margem automática para centralizar*/
+}
+
+    /*Selecionar produto e ele se expande e o foco e ele*/
+    .produto-box:hover {
+        box-shadow: 4px 4px 10px rgba(0,0,0,0.5); /*Aumenta a sombra ao passar o mouse, isso dá um efeito de destaque para a avaliação selecionada*/
+        transition: box-shadow 0.3s ease; /*Adiciona uma transição suave ao passar o mouse*/
+        transform: scale(1.02); 
+            }
+
+
+.stars{
+    display: flex;
+    gap: 5px;
+    justify-content: center; /*Centraliza as estrelas horizontalmente*/
+}
+
+/*As estrelas*/
+.star{
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    background-color: orange;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+/*Imagem perfil*/
+.img_perfil{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
