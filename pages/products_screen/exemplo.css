@@ -243,6 +243,7 @@
         border-radius: 8px;
         transition: background-color 0.2s ease;
         text-transform: uppercase;
+        font-weight: bold;
             }
 
         #contato-vendedor:hover {
