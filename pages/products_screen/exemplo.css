@@ -149,14 +149,14 @@
 
          .titulo_descricao p {
             margin: 2px 0 0; /*É a mesma coisa que margin-top: 2px; margin-right: 0; margin-bottom: 0; margin-left: 0;*/
-            font-size: 13px;
+            font-size: 19px;
             font-weight: 300;
             color: #555;
         }
 
         /*P é o elemento filho direto das avaliações*/
         .avaliações > p {
-            font-size: 13px;
+            font-size: 16px;
             color: #444;
             line-height: 1.5;
             margin: 8px 0 0;
@@ -239,7 +239,7 @@
         color: white;
         width: 250px;
         text-decoration: none;
-        font-size: 16px;
+        font-size: 18px;
         border-radius: 8px;
         transition: background-color 0.2s ease;
         text-transform: uppercase;

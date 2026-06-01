@@ -32,6 +32,7 @@
     -ms-overflow-style: none /*Esconde as barras de rolagem no Internet Explorer e Edge*/
 }
 
+/*Container do track dos slides*/
 .glider-track {
     width: 100%;
     margin: 0;
@@ -81,7 +82,7 @@
     font-size: 40px;
     text-decoration: none;
     left: -23px;
-    top: 30%;
+    top: 50%;
     cursor: pointer;
     color: #CE7DA5;
     opacity: 1;
@@ -141,6 +142,7 @@
     background: #a89cc8
 }
 
+/*Responsividade no celular*/
 @media(max-width:36em) {
     .glider::-webkit-scrollbar {
         opacity: 1;
