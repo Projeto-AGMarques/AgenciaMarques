@@ -1,1 +1,88 @@
-@import "../../global/global.css"
+body{
+    background-color: rgb(17, 54, 122);
+}
+
+/* imagem do header!!! */
+.mock img{
+position: absolute;
+width: 435px;
+height: 112px;
+left: 0px;
+top: 0px;
+
+background: linear-gradient(270deg, #F2203E 0%, #FFC35C 100%);
+}
+
+.marqi img{
+position: absolute;
+width: 194px;
+height: 241px;
+left: 4px;
+top: 125px;
+border-radius: 5px;
+}
+
+.infomar p{
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 5px;
+color: rgb(218, 218, 218);
+}
+
+
+.infomar h1{
+position: absolute;
+width: 400px;
+height: 60px;
+left: 200px;
+top: 120px;
+
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 20px;
+
+color: rgb(218, 218, 218);
+}
+
+.txtfun h1{
+position: relative;
+width: 400px;
+height: 60px;
+left: 40px;
+top: 360px;
+
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 20px;
+
+color: #4285F4;
+}
+
+.fundo img{
+position: absolute;
+width: 450.08px;
+height: 250.83px;
+left: -18.08px;
+top: 300.96px;
+}
+
+.caixas img{
+position:absolute;
+width: 170px;
+height: 130px;
+left: 285px;
+top: 410px;
+}
+
+.dep img{
+position:absolute;
+width: 145px;
+height: 130px;
+left: 0px;
+top: 450px;
+}
+
+
