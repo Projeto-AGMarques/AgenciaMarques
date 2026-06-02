@@ -8,6 +8,7 @@
     --cor-blue: #11367A;
     --cor-blue-light: #7CAAFF;
     --cor-purple: #4533CD;
+    --cor-header: linear-gradient(90deg, #FFC35C 0%, #F2203E 100%);
 }
 
 /* Essa propriedade abaixo serve para pré-configurar a renderização web em qualquer navegador */
