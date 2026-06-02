@@ -1,0 +1,259 @@
+@import "../../global/global.css" ;
+
+/*Elementos da página*/
+/*Esse asterisco seleciona todos os elementos da página*/
+/*Adiciona antes e depois */
+*, *::before, *::after {
+            box-sizing: border-box;
+        }
+        
+        section {
+            overflow: hidden;
+            padding: 40px 20px 60px;
+        }
+
+        /*Título da seção, "Avaliações de Produtos" */
+        .titulo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+ .produtos-titulo {
+            font-weight: bold;
+            font-size: 24px;
+            margin: 0;
+            text-transform: uppercase; /*Deixa o texto em formato maiúsculo*/
+            color: #e0e0e0;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+.glider-contain {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+         /* filho direto do .glider = 1 slide */
+        .produto-box {
+            padding: 0 10px;
+        }
+
+        .avaliações {
+            background-color: #e0e0e0;
+            border-radius: 16px;
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+        .avaliações:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px); /*Leve ele para cima, dando a sensação de que está flutuando*/
+        }
+
+            /*Container do perfil do usuário e nome*/
+        .titular {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            justify-content: center;
+            margin-bottom: 4px;
+            background-color: #ccc;
+            border-radius: 12px;
+            padding: 8px 16px;
+        }
+
+         .titular h2 {
+            margin: 0;
+            font-size: 15px;
+            font-weight: 600;
+            color: #222;
+        }
+
+        /*Foto do perfil de usuário*/
+        .img_perfil {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover; /*É usado para manter a proporção da imagem dentro do contêiner, sem overflow*/
+            flex-shrink: 0; /*Ajusta o tamanho do elemento para não ser reduzido mesmo se o container for compactado, ele mantem aquele tamanho*/
+        }
+
+        /*Componente da data*/
+        small {
+            display: block; /*Esse elemento faz com que seja ocupado todo espaço disponível verticalmente*/
+            text-align: center; /*Ajuda o elemento a ser centralizado, juntamente do block, assim ele não fica em inline*/
+            color: #666;
+            font-size: 12px;
+            margin: 6px 0 10px;
+        }
+
+        /*As estrelas, o conjunto*/
+
+        .stars {
+            display: flex;
+            gap: 4px;
+            justify-content: center;
+            list-style: none;
+            margin: 0 0 12px;
+            padding: 0;
+        }
+
+        /*Cada estrela individualmente*/
+        .star {
+            width: 20px;
+            height: 20px;
+            background-color: orange;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); /*Cálculo das coordenadas da estrela*/
+        }
+
+        /*Container da imagem do produto*/
+        .img_box {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            display: block;
+            overflow: hidden; /*Evita que a imagem transborda do contêiner*/
+            margin-bottom: 10px;
+        }
+
+        /*A imagem*/
+         .img_box img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover; /* Mantém a proporção da imagem dentro do contêiner */
+            border-radius: 12px;
+            display: block;
+        }
+
+        /*Área clicável maior*/
+        .img_box a {
+            display: block;
+        }
+
+        /*Div do nome e da marca*/
+         .titulo_descricao {
+            text-align: center;
+            margin: 8px 0 4px;
+        }
+
+        /*Nome do produto*/
+        .titulo_descricao span {
+            font-weight: bold;
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #111;
+        }
+
+         .titulo_descricao p {
+            margin: 2px 0 0; /*É a mesma coisa que margin-top: 2px; margin-right: 0; margin-bottom: 0; margin-left: 0;*/
+            font-size: 19px;
+            font-weight: 300;
+            color: #555;
+        }
+
+        /*P é o elemento filho direto das avaliações*/
+        .avaliações > p {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.5;
+            margin: 8px 0 0;
+        }
+
+        /*Botões do glider*/
+        .glider-prev,.glider-next {
+            background-color: #db5375;
+            border: 1px solid #CE7DA5;
+            color: white;
+            padding: 10px 16px;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 8px;
+            position: absolute;
+            top: 50%; /*Metada a altura do pai conteiner*/
+            transform: translateY(-50%); /*Desloca o elemento 50% da sua própria altura para cima*/
+            z-index: 10; /*Empilha o elemento acima dos outros*/
+            transition: background-color 0.2s ease;
+        }
+
+
+        .glider-prev { 
+            left: -10px; 
+        }
+        .glider-next { 
+            right: -10px; 
+        }
+/*Efeito do mouse sobre os botões*/
+        .glider-prev:hover,.glider-next:hover {
+            background-color: #CE7DA5;
+        }
+
+        .glider-prev.disabled,.glider-next.disabled {
+            opacity: 0.3;
+            cursor: default;
+        }
+
+        /*Os pontos de navegação*/
+
+          .dots {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 24px;
+        }
+
+        .glider-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #CE7DA5;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+        }
+
+        .glider-dot.active {
+            background-color: #db5375;
+            transform: scale(1.3);
+        }
+
+        /*Regras para dispositivos móveis*/
+
+        @media (max-width: 600px) {
+            .glider-prev { 
+                left: 0;
+             }
+            .glider-next { 
+                right: 0; 
+            }
+        }
+
+        /*Botão de contato com o vendedor*/
+    #contato-vendedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 15px;
+        background-color: #db5375;
+        color: white;
+        width: 250px;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 8px;
+        transition: background-color 0.2s ease;
+        text-transform: uppercase;
+        font-weight: bold;
+            }
+
+        #contato-vendedor:hover {
+            background-color: #CE7DA5;
+            transform:scale(1.05);
+        }
+
+       

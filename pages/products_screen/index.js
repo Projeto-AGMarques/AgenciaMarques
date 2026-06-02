@@ -1,14 +1,11 @@
-export default class Cachorro { // SuperEntidade
-    Latir() {
-        console.log("Auau");
-        
-    }
-}
+new Glider(document.querySelector('.glider'), {
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  draggable: true,
+  dots: '.dots',
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  }
+});
 
-class Pessoa extends Cachorro { // SubEntidade
-    
-}
-
-let pessoa = new Pessoa()
-
-pessoa.Latir()

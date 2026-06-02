@@ -1,0 +1,132 @@
+@import "../../global/global.css";
+
+.titlePage_faq{
+    text-align: center;
+    margin-top: 30px;
+    color: white
+}
+
+/* #region FirstContainer */
+.firstContainer_faq{
+    margin-top: 25px;
+    background-color: transparent;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px;
+    padding-inline: 20px;
+    position: relative;
+}
+
+.firstContainer_faq .card{
+    background-color: white;
+    height: 18dvh;
+    border-radius: 10%;
+    z-index: 20;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    box-shadow: 0px 0px 10px black;
+    
+    div{
+        background-color: var(--cor-blue-light);
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        width: fit-content;
+        height: fit-content;
+        border-radius: 50%;
+        padding: 10px;
+    }
+    
+    p{
+        width: 100%;
+        text-align: center;
+        align-self: flex-start;
+        color: black;
+    }
+}
+
+.firstContainer_faq .circle_faq{
+    position: absolute;
+    background-color: var(--cor-blue-light);
+    height: 200px;
+    width: 200px;
+    z-index: 0;
+    justify-self: center;
+    align-self: center;
+    border-radius: 50%;
+}
+
+/* #endregion FirstContainer */
+
+/* #region SegondContainer */
+
+.secondContainer_faq{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding-inline: 30px;
+}
+
+.secondContainer_faq .accordionComponent_faq{
+    width: 100%;
+    height: fit-content;
+}
+
+.secondContainer_faq .accordionComponent_faq .headerAccordion_faq {
+    width: 100%;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    background-color: white;
+    border-style: none;
+
+    p{
+        color: black;
+    }
+}
+
+.headerAccordionActive_faq {
+    border-radius: 25px 25px 0 0;
+
+    svg{
+        transform: rotate(180deg);
+    }
+}
+
+.headerAccordionDisable_faq {
+    border-radius: 25px;
+}
+
+.secondContainer_faq .accordionComponent_faq .infoAccordion_faq{
+    padding: 15px;
+    background-color: white;
+    border-end-end-radius: 25px;
+    border-end-start-radius: 25px;
+
+    p{
+        color: black;
+    }
+}
+
+.infoAccordionDisable_faq{
+    display: none;
+}
+
+.infoAccordion_faq p {
+    color: black;
+}
+
+
+
+
+
+/* #endregion SegondContainer */
