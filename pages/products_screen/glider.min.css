@@ -139,7 +139,7 @@
 }
 /*Quando o dot está ativo, selecionado*/
 .glider-dot.active {
-    background: #a89cc8
+    background: #a89cc8;
 }
 
 /*Responsividade no celular*/
