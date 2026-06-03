@@ -10,7 +10,7 @@
         section {
             overflow: hidden;
             padding: 40px 20px 60px;
-  background: linear-gradient(to bottom, #5CA6C1 0%, #97C7D8 55%, #97C7D8 100%);
+  background: linear-gradient(to bottom, #5CA6C1 5%, #97C7D8 60%, #97C7D8 100%);
 
         }
 
@@ -147,11 +147,29 @@
   transition: background 0.2s ease;
 }
 
+/*Feedback para computador*/
 .btn-contato:hover {
   background-color: #218074; /* Escurece de leve ao passar o mouse */
+  transform: scale(1.05); /* Dá um leve zoom para feedback visual */
 }
 
-/* Responsividade Básica (Celular) */
+/*Feedback para dispositivos móveis*/
+.btn-contato:active {
+  transform: scale(0.95); /* Dá um leve zoom para feedback visual */
+    
+    /* Escurece o verde de fundo para mostrar intensidade no clique */
+    background-color: #1B6B61; 
+    border-color: #1B6B61;
+    
+    /* Diminui a sombra, já que o botão "encostou" no fundo da página */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    
+    /* Transição ultra rápida para o clique parecer instantâneo e responsivo */
+    transition: transform 0.05s ease; 
+}
+
+
+/* Responsividade */
 @media (max-width: 768px) {
   .grid-produtos {
     grid-template-columns: 1fr; /* No celular, os cards ficam um embaixo do outro */
@@ -161,10 +179,11 @@
 
 /*Seção do Carrosel*/
 .glider-contain {
-            position: relative;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px 30px; /*Adiciona espaço para os botões de navegação*/
+                    }                   
 
          /* filho direto do .glider = 1 slide */
         .produto-box {
@@ -172,18 +191,18 @@
         }
 
             .avaliações {
-    background-color: #F4F8FA; /* Seu Off-White Gelo */
-    border-radius: 16px;
-    padding: 24px 20px; /* UX: Aumentamos o espaçamento para o texto respirar nas laterais */
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+                background-color: #F4F8FA; /* Seu Off-White Gelo */
+                border-radius: 16px;
+                padding: 24px 20px; /* UX: Aumentamos o espaçamento para o texto respirar nas laterais */
+                width: 100%;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
         .avaliações:hover {
             box-shadow: 0 10px 25px rgba(29, 42, 68, 0.08); 
-    transform: translateY(-5px); /*Leve ele para cima, dando a sensação de que está flutuando*/
+            transform: translateY(-5px); /*Leve ele para cima, dando a sensação de que está flutuando*/
         }
 
             /*Container do perfil do usuário e nome*/
@@ -323,20 +342,19 @@
             transition: background-color 0.2s ease;
 
             /*Cria círculo perfeito*/
-            width: 44px;
-    height: 44px;
-    background-color: #ffffff; /* Fundo branco para destacar do azul-pastel */
-    border-radius: 50%;
-        
-    top: 50%; /*Metada a altura do pai conteiner*/
-    transform: translateY(-50%); /*Desloca o elemento 50% da sua própria altura para cima*/
+            width: 40px;
+            height: 40px;
+            background-color: #ffffff; /* Fundo branco para destacar do azul-pastel */
+            border-radius: 50%;
+            top: 50%; /*Metada a altura do pai conteiner*/
+            transform: translateY(-50%); /*Desloca o elemento 50% da sua própria altura para cima*/
         }
 
         .glider-prev { 
-            left: -20px; 
+            left: 20px; 
         }
         .glider-next { 
-            right: -20px; 
+            left: 20px; 
         }
 /*Efeito do mouse sobre os botões*/
         .glider-prev:hover,.glider-next:hover {
@@ -383,12 +401,26 @@
 
         @media (max-width: 600px) {
             .glider-prev { 
-                left: 0;
+                left: 10px;
              }
             .glider-next { 
-                right: 0; 
+                right: 10px; 
             }
+            .glider-contain {
+               margin: 0 auto; /*Reduz a margem lateral para caber melhor em telas pequenas*/
+                padding:0 15px; /*Adiciona um pouco de padding para evitar que os botões fiquem muito próximos das bordas da tela*/
+                box-sizing: border-box; /*Garante que o padding seja incluído no cálculo da largura total do container, evitando overflow*/
+            }
+
+            .glider-dot {
+                width: 12px;
+                height: 12px;
+            }
+
+            .glider-track{
+                gap: 20px; /*Aumenta o espaçamento entre os slides para melhor usabilidade no celular*/
         }
+    }
 
         /*Botão de contato com o vendedor*/
     #contato-vendedor {
@@ -414,6 +446,11 @@
         #contato-vendedor:hover {
             background-color: #1B6E73;
             transform:scale(1.05);
+        }
+
+        #contato-vendedor:active {
+            background-color: #1B6E73;
+            transform:scale(0.95);
         }
 
        
