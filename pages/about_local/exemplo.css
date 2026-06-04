@@ -4,6 +4,10 @@
     display: none;
 }
 
+#aboutLocal_Screen{
+    overflow-x: hidden;
+}
+
 .Container_local {
     background-color: transparent;
     width: 100%;
@@ -104,6 +108,7 @@
 
 .Container_local .containerNull2_local{
     width: 50%;
+    /* background-color: red; */
 }
 
 #circleNullTwo{

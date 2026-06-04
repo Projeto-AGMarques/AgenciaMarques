@@ -35,7 +35,6 @@ p {
 /* Não mexer nesse body */
 body{
     background-color: var(--cor-blue);
-    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
