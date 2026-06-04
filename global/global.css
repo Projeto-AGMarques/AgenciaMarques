@@ -1,5 +1,6 @@
 /* Aqui abaixo virão os @imports */
-
+@import "../pages/about_local/exemplo.css";
+@import "../pages/faq/exemplo.css";
 
 /* Aqui são as variáveis de cores globais */
 :root{
@@ -35,6 +36,10 @@ p {
 body{
     background-color: var(--cor-blue);
     overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 

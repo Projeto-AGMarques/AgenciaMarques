@@ -1,15 +1,98 @@
-const accordions = document.querySelectorAll(".accordionComponent_faq");
+export const Screen_FAQ = `
+    <section id="faq_Screen">
+        <h2 class="titlePage_faq">DÚVIDAS FREQUENTES</h1>
+        
+        <!-- Cards Representativos -->
+        <div class="firstContainer_faq">
+            <div class="card">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="white"><path d="M440-183v-274L200-596v274l240 139Zm80 0 240-139v-274L520-457v274Zm-80 92L160-252q-19-11-29.5-29T120-321v-318q0-22 10.5-40t29.5-29l280-161q19-11 40-11t40 11l280 161q19 11 29.5 29t10.5 40v318q0 22-10.5 40T800-252L520-91q-19 11-40 11t-40-11Zm200-528 77-44-237-137-78 45 238 136Zm-160 93 78-45-237-137-78 45 237 137Z"/></svg>
+                </div>
+                <p>Pedidos e Entregas</p>
+            </div>
+            <div class="card">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#FFFFFF"><path d="M880-740v520q0 24-18 42t-42 18H140q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42ZM140-631h680v-109H140v109Zm0 129v282h680v-282H140Zm0 282v-520 520Z"/></svg>
+                </div>
+                <p>Formas de Pagamento</p>
+            </div>
+            <div class="card">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#FFFFFF"><path d="m612-120-263-93-179 71q-17 9-33.5-1T120-173v-558q0-13 7.5-23t19.5-15l202-71 263 92 178-71q17-8 33.5 1.5T840-788v565q0 11-7.5 19T814-192l-202 72Zm-34-75v-505l-196-66v505l196 66Zm60 0 142-47v-512l-142 54v505Zm-458-12 142-54v-505l-142 47v512Zm458-493v505-505Zm-316-66v505-505Z"/></svg>
+                </div>
+                <p>Sobre o Local</p>
+            </div>
+            <div class="card">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#FFFFFF"><path d="M480-160q-133 0-226.5-93.5T160-480q0-133 93.5-226.5T480-800q85 0 149 34.5T740-671v-129h60v254H546v-60h168q-38-60-97-97t-137-37q-109 0-184.5 75.5T220-480q0 109 75.5 184.5T480-220q83 0 152-47.5T728-393h62q-29 105-115 169t-195 64Z"/></svg>
+                </div>
+                <p>Devoluções</p>
+            </div>
 
+            <div class="circle_faq"></div>
+        </div>
 
-// Basicamente para cada class selecionada através do document.querySelectorAll, ele irá fazer essa função específica, ou seja, para cada accordion de informações ele irá fazer essas funções em específico sem precisar criar ids para cada accordion.
-accordions.forEach((accordion) => {
-    const btn = accordion.querySelector(".headerAccordion_faq");
-    const info = accordion.querySelector(".infoAccordion_faq");
+        <!-- Linhas dos Accordion, onde as informações descem -->
+        <div class="secondContainer_faq">
 
-    btn.addEventListener("click", () => {
-        info.classList.toggle("infoAccordionDisable_faq");
+            <!-- Sobre Pedidos e Entregas -->
+            <div class="accordionComponent_faq">
+                <button class="headerAccordion_faq headerAccordionDisable_faq">
+                    <p>Pedidos e Entregas</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#7CAAFF">
+                        <path d="M480-344 240-584l43-43 197 197 197-197 43 43-240 240Z"/>
+                    </svg>
+                </button>
 
-        btn.classList.toggle("headerAccordionActive_faq");
-        btn.classList.toggle("headerAccordionDisable_faq");
-    });
-});
+                <div class="infoAccordion_faq infoAccordionDisable_faq">
+                    <p>Informações sobre pedidos e entregas...</p>
+                </div>
+            </div>
+
+            <!-- Formas de Pagamento -->
+            <div class="accordionComponent_faq">
+                <button class="headerAccordion_faq headerAccordionDisable_faq">
+                    <p>Formas de Pagamento</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#7CAAFF">
+                        <path d="M480-344 240-584l43-43 197 197 197-197 43 43-240 240Z"/>
+                    </svg>
+                </button>
+
+                <div class="infoAccordion_faq infoAccordionDisable_faq">
+                    <p>Informações sobre pedidos e entregas...</p>
+                </div>
+            </div>
+
+            <!-- Sobre o Local -->
+            <div class="accordionComponent_faq">
+                <button class="headerAccordion_faq headerAccordionDisable_faq">
+                    <p>Sobre o Local</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#7CAAFF">
+                        <path d="M480-344 240-584l43-43 197 197 197-197 43 43-240 240Z"/>
+                    </svg>
+                </button>
+
+                <div class="infoAccordion_faq infoAccordionDisable_faq">
+                    <p>Informações sobre pedidos e entregas...</p>
+                </div>
+            </div>
+
+            <!-- Devouluções -->
+            <div class="accordionComponent_faq">
+                <button class="headerAccordion_faq headerAccordionDisable_faq">
+                    <p>Devoluções</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#7CAAFF">
+                        <path d="M480-344 240-584l43-43 197 197 197-197 43 43-240 240Z"/>
+                    </svg>
+                </button>
+
+                <div class="infoAccordion_faq infoAccordionDisable_faq">
+                    <p>Informações sobre pedidos e entregas...</p>
+                </div>
+            </div>
+
+        </div>
+        
+        
+    </section>`
+
