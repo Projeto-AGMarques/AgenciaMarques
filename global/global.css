@@ -33,14 +33,61 @@ p {
     box-sizing: border-box;
 }
 
-/* Não mexer nesse body */
+/* Body usado no Mobile */
 body{
     background-color: var(--cor-blue);
     display: flex;
     flex-direction: column;
     gap: 25px;
+
+    #Warning_main{
+        display: none;
+    }
+
 }
 
+/* Alteração no Body para Desktop! Será retirado em breve. */
+@media(min-width: 730px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100dvh;
+
+        #home{
+            display: none;
+        }
+
+        #about_company{
+            display: none;
+        }
+
+        #faq{
+            display: none;
+        }
+
+        #about_local{
+            display: none;
+        }
+
+        #products_screen{
+            display: none;
+        }
+
+        footer{
+            display: none;
+        }
+
+        #Warning_main{
+            display: block;
+            color: white;
+            font-size: 150px;
+        }
+    }
+}
+
+/* Propriedade usada para retirar a barra de rolagem no Mobile sem impedir a ação de rolagem. */
 ::-webkit-scrollbar {
     display: none;
 }
