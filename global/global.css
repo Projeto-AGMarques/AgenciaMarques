@@ -1,13 +1,16 @@
 /* Aqui abaixo virão os @imports */
-
+@import "../pages/about_local/exemplo.css";
+@import "../pages/faq/exemplo.css";
+@import "../pages/about_company/exemplo.css";
+@import "../components/footer/footer.css";
 
 /* Aqui são as variáveis de cores globais */
 :root{
     --cor-orange: #FFC35C;
-    --cor-red: #F2203E;
     --cor-blue: #11367A;
     --cor-blue-light: #7CAAFF;
     --cor-purple: #4533CD;
+    --cor-header: linear-gradient(90deg, #FFC35C 0%, #F2203E 100%);
 }
 
 /* Essa propriedade abaixo serve para pré-configurar a renderização web em qualquer navegador */
@@ -33,7 +36,13 @@ p {
 /* Não mexer nesse body */
 body{
     background-color: var(--cor-blue);
-    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 

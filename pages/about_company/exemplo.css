@@ -1,1 +1,108 @@
-@import "../../global/global.css"
+/* imagem do header!!! */
+@import "../../global/global.css";
+
+#aboutCompany_Screen{
+    position: relative;
+}
+
+.rowContainer_company{
+    width: 100%;
+    height: fit-content;
+    /* background-color: red; */
+}
+
+/* #region Primeira Row */
+
+#firstRow_company{
+    /* background-color: yellow; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 25px;
+    gap: 5px;
+}
+
+.containerImg_company{
+    position: relative;
+}
+
+.textTitle_company{
+    padding-right: 8px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        color: white;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    p{
+        margin-top: 20px;
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+/* #endregion */
+
+
+/* #region Segunda Row  */
+
+#secondRow_company{
+    /* background-color: green; */
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid: 50px;
+    padding-top: 20px;
+}
+
+#imgGrayBack_company {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -50px;
+    z-index: -10;
+}
+
+.dep{
+    position: relative;
+    height: fit-content;
+    background-color: yellow;
+    img{
+        position: absolute;
+        left: 50px;
+        width: 100px;
+        height: auto;
+        transform: scale(1.7);
+    }    
+}
+
+.caixas{
+    height: fit-content;
+    display: flex;
+    justify-content: end;
+    /* background-color: green; */
+    img{
+        width: 50%;
+        height: auto;
+        /* background-color: pink; */
+        transform: scale(1.1);
+    }
+}
+
+#textEffect_company{
+    /* background-color: red; */
+    color: var(--cor-blue-light);
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: center;
+}
+
+/* #endregion */
