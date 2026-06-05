@@ -1,6 +1,7 @@
 /* Aqui abaixo virão os @imports */
 @import "../pages/about_local/exemplo.css";
 @import "../pages/faq/exemplo.css";
+@import "../pages/about_company/exemplo.css";
 
 /* Aqui são as variáveis de cores globais */
 :root{
@@ -35,6 +36,9 @@ p {
 /* Não mexer nesse body */
 body{
     background-color: var(--cor-blue);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 ::-webkit-scrollbar {

@@ -1,88 +1,108 @@
-body{
-    background-color: rgb(17, 54, 122);
-}
-
 /* imagem do header!!! */
-.mock img{
-position: absolute;
-width: 435px;
-height: 112px;
-left: 0px;
-top: 0px;
+@import "../../global/global.css";
 
-background: linear-gradient(270deg, #F2203E 0%, #FFC35C 100%);
+#aboutCompany_Screen{
+    position: relative;
 }
 
-.marqi img{
-position: absolute;
-width: 194px;
-height: 241px;
-left: 4px;
-top: 125px;
-border-radius: 5px;
+.rowContainer_company{
+    width: 100%;
+    height: fit-content;
+    /* background-color: red; */
 }
 
-.infomar p{
-font-style: normal;
-font-weight: 500;
-font-size: 17px;
-line-height: 5px;
-color: rgb(218, 218, 218);
+/* #region Primeira Row */
+
+#firstRow_company{
+    /* background-color: yellow; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 25px;
+    gap: 5px;
 }
 
-
-.infomar h1{
-position: absolute;
-width: 400px;
-height: 60px;
-left: 200px;
-top: 120px;
-
-font-style: normal;
-font-weight: 500;
-font-size: 30px;
-line-height: 20px;
-
-color: rgb(218, 218, 218);
+.containerImg_company{
+    position: relative;
 }
 
-.txtfun h1{
-position: relative;
-width: 400px;
-height: 60px;
-left: 40px;
-top: 360px;
+.textTitle_company{
+    padding-right: 8px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-font-style: normal;
-font-weight: 500;
-font-size: 25px;
-line-height: 20px;
+    h1{
+        color: white;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
 
-color: #4285F4;
+    p{
+        margin-top: 20px;
+        font-size: 15px;
+        text-align: center;
+    }
 }
 
-.fundo img{
-position: absolute;
-width: 450.08px;
-height: 250.83px;
-left: -18.08px;
-top: 300.96px;
+/* #endregion */
+
+
+/* #region Segunda Row  */
+
+#secondRow_company{
+    /* background-color: green; */
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid: 50px;
+    padding-top: 20px;
 }
 
-.caixas img{
-position:absolute;
-width: 170px;
-height: 130px;
-left: 285px;
-top: 410px;
+#imgGrayBack_company {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -50px;
+    z-index: -10;
 }
 
-.dep img{
-position:absolute;
-width: 145px;
-height: 130px;
-left: 0px;
-top: 450px;
+.dep{
+    position: relative;
+    height: fit-content;
+    background-color: yellow;
+    img{
+        position: absolute;
+        left: 50px;
+        width: 100px;
+        height: auto;
+        transform: scale(1.7);
+    }    
 }
 
+.caixas{
+    height: fit-content;
+    display: flex;
+    justify-content: end;
+    /* background-color: green; */
+    img{
+        width: 50%;
+        height: auto;
+        /* background-color: pink; */
+        transform: scale(1.1);
+    }
+}
 
+#textEffect_company{
+    /* background-color: red; */
+    color: var(--cor-blue-light);
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: center;
+}
+
+/* #endregion */
