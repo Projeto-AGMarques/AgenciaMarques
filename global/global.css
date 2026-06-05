@@ -2,11 +2,11 @@
 @import "../pages/about_local/exemplo.css";
 @import "../pages/faq/exemplo.css";
 @import "../pages/about_company/exemplo.css";
+@import "../components/footer/footer.css";
 
 /* Aqui são as variáveis de cores globais */
 :root{
     --cor-orange: #FFC35C;
-    --cor-red: #F2203E;
     --cor-blue: #11367A;
     --cor-blue-light: #7CAAFF;
     --cor-purple: #4533CD;
