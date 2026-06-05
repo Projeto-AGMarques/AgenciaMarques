@@ -247,8 +247,7 @@
             margin: 4px 0 12px;
             margin-left: 52px; /*Cria um recuo para a data, alinhando com o início do nome do usuário, considerando a largura da foto e o gap*/
         }
-
-        /*As estrelas, o conjunto*/
+             /*As estrelas, o conjunto*/
 
         .stars {
             display: flex;
