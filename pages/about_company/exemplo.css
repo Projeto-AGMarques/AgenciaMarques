@@ -2,6 +2,7 @@
 @import "../../global/global.css";
 
 #aboutCompany_Screen{
+    overflow-x: hidden;
     position: relative;
 }
 
