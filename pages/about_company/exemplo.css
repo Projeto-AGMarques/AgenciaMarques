@@ -2,8 +2,9 @@
 @import "../../global/global.css";
 
 #aboutCompany_Screen{
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
+    padding-bottom: 50px;
 }
 
 .rowContainer_company{
