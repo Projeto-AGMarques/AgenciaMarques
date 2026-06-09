@@ -64,6 +64,7 @@
 .card-produto {
   background-color: #F4F8FA; /* Off-White Gelo */
   border-radius: 16px;
+  border: 1px solid rgba(29, 42, 68, 0.1); /* Sombra leve para dar profundidade */
   overflow: hidden; /* Garante que a imagem não saia das bordas arredondadas */
   box-shadow: 0 4px 15px rgba(29, 42, 68, 0.05);
   display: flex;
@@ -464,12 +465,14 @@
 
         .intro-container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 2fr;
            align-items: center;
             text-align: center;
-            gap: 12px;
+            gap: 10px;
             margin-bottom: 40px;
             padding: 0 20px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         @media (max-width: 768px) {
@@ -477,6 +480,25 @@
                 grid-template-columns: 1fr; /* No celular, os elementos ficam um embaixo do outro */
             }
         }
+
+        /*Imagem*/
+        .intro-container img {
+            width: 100%;
+            max-width: 400px;
+            object-fit: cover;
+            border-radius: 16px;
+            border-style: none;
+            box-shadow: 0 4px 15px rgba(29, 42, 68, 0.05);
+            margin: 0 auto; /*Centraliza a imagem dentro da coluna*/
+        }
+
+        @media (max-width: 768px) {
+            .intro-container img {
+                max-width: 100%; /* No celular, a imagem ocupa toda a largura disponível */
+            }
+        }
+
+         /*Texto introdutório*/
 
         /*Blockquote para transmitir a mensagem*/
 
@@ -513,3 +535,5 @@
             grid-template-columns: 1fr; 
         }
     }
+
+
