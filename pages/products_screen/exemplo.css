@@ -10,46 +10,198 @@
         section {
             overflow: hidden;
             padding: 40px 20px 60px;
+  background: linear-gradient(to bottom, #5CA6C1 5%, #97C7D8 60%, #97C7D8 100%);
+
         }
 
         /*Título da seção, "Avaliações de Produtos" */
         .titulo {
+            display: block;
+            justify-content: center;
+            margin-bottom: 40px;
+
+        }
+        .titulo-two{
             display: flex;
             justify-content: center;
             margin-bottom: 40px;
-        }
+        }    
 
  .produtos-titulo {
             font-weight: bold;
             font-size: 24px;
             margin: 0;
             text-transform: uppercase; /*Deixa o texto em formato maiúsculo*/
-            color: #e0e0e0;
+            color:#1f2d3d; /*O azul escuro para destacar o título*/ 
             text-align: center;
+            letter-spacing: 3px;
+        }
+
+        .subtitulo {
+            font-size: 16px;
+            color: rgba(31, 45, 61, 0.9); /*O grafite com um pouco de transparência para suavizar o subtítulo*/
+            margin-top: 2px;
+            text-align: center;
+            font-weight:400;
+            text-transform: lowercase;
             letter-spacing: 2px;
         }
 
+/*Seção Top Produtos*/
+
+/* Container que envelopa os 3 produtos */
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas iguais */
+  gap: 30px; /* Espaço entre os cards */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+/* Estilo do Card individual */
+.card-produto {
+  background-color: #F4F8FA; /* Off-White Gelo */
+  border-radius: 16px;
+  overflow: hidden; /* Garante que a imagem não saia das bordas arredondadas */
+  box-shadow: 0 4px 15px rgba(29, 42, 68, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Área da foto e da tag Crimson */
+.container-imagem {
+  position: relative;
+  background-color: #ffffff; /* Fundo branco puro para destacar o produto */
+  padding: 10px;
+}
+
+.tag-desconto {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #C1292E; /* O Crimson estrategicamente aqui */
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.foto-produto {
+  width: 100%;
+  height: 200px;
+  object-fit: contain; /* Ajusta a foto sem distorcer */
+}
+
+/* Textos e Informações */
+.conteudo-produto {
+  padding: 24px;
+}
+
+.nome-produto {
+  color: #111111; /* O Preto para destacar o nome do produto */ 
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.descricao-produto {
+  color: #333333; /* O grafite que mantém o conforto na leitura */
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Preços */
+.preco-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.preco-antigo {
+  color: #6C757D;
+  text-decoration: line-through; /* Risca o preço antigo */
+  font-size: 0.9rem;
+}
+
+.preco-atual {
+  color: #358600; /* O Verde Vivo para passar sucesso/economia */
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+/* Botão de Contato */
+.btn-contato {
+  display: block;
+  text-align: center;
+  background-color: #2A9D8F; /* O Verde-Azulado amigável */
+  color: #ffffff;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+/*Feedback para computador*/
+.btn-contato:hover {
+  background-color: #218074; /* Escurece de leve ao passar o mouse */
+  transform: scale(1.05); /* Dá um leve zoom para feedback visual */
+}
+
+/*Feedback para dispositivos móveis*/
+.btn-contato:active {
+  transform: scale(0.95); /* Dá um leve zoom para feedback visual */
+    
+    /* Escurece o verde de fundo para mostrar intensidade no clique */
+    background-color: #1B6B61; 
+    border-color: #1B6B61;
+    
+    /* Diminui a sombra, já que o botão "encostou" no fundo da página */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    
+    /* Transição ultra rápida para o clique parecer instantâneo e responsivo */
+    transition: transform 0.05s ease; 
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .grid-produtos {
+    grid-template-columns: 1fr; /* No celular, os cards ficam um embaixo do outro */
+  }
+}
+
+
+/*Seção do Carrosel*/
 .glider-contain {
-            position: relative;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px 30px; /*Adiciona espaço para os botões de navegação*/
+                    }                   
 
          /* filho direto do .glider = 1 slide */
         .produto-box {
             padding: 0 10px;
         }
 
-        .avaliações {
-            background-color: #e0e0e0;
-            border-radius: 16px;
-            padding: 20px;
-            width: 100%;
-            box-sizing: border-box;
-            transition: box-shadow 0.3s ease, transform 0.3s ease;
-        }
+            .avaliações {
+                background-color: #F4F8FA; /* Seu Off-White Gelo */
+                border-radius: 16px;
+                padding: 24px 20px; /* UX: Aumentamos o espaçamento para o texto respirar nas laterais */
+                width: 100%;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
         .avaliações:hover {
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 25px rgba(29, 42, 68, 0.08); 
             transform: translateY(-5px); /*Leve ele para cima, dando a sensação de que está flutuando*/
         }
 
@@ -58,25 +210,30 @@
             display: flex;
             align-items: center;
             gap: 12px;
-            justify-content: center;
-            margin-bottom: 4px;
-            background-color: #ccc;
-            border-radius: 12px;
-            padding: 8px 16px;
+            justify-content: flex-start; /* UX: Alinha foto e nome à esquerda de forma natural */
+            margin-bottom: 12px;
+            background-color: transparent; /* CORREÇÃO: Tiramos o fundo lilás daqui para não esmagar a foto */
+            padding: 0;
         }
 
          .titular h2 {
             margin: 0;
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 600;
-            color: #222;
+            color: #1D2A44; /* Seu azul escuro corporativo */
+            background-color: #bcd3f2; /* O seu lilás aplicado estritamente como uma tag */
+            padding: 6px 14px;
+            border-radius: 20px; /* Formato de pílula/selo moderno */
+            display: inline-block;
         }
 
         /*Foto do perfil de usuário*/
-        .img_perfil {
-            width: 48px;
-            height: 48px;
+            .img_perfil {
+            width: 40px; /* UX: Tamanho ligeiramente menor e mais delicado */
+            height: 40px;
             border-radius: 50%;
+            border: 2px solid #ffffff; /* Dá um detalhe elegante ao redor da foto */
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
             object-fit: cover; /*É usado para manter a proporção da imagem dentro do contêiner, sem overflow*/
             flex-shrink: 0; /*Ajusta o tamanho do elemento para não ser reduzido mesmo se o container for compactado, ele mantem aquele tamanho*/
         }
@@ -84,20 +241,20 @@
         /*Componente da data*/
         small {
             display: block; /*Esse elemento faz com que seja ocupado todo espaço disponível verticalmente*/
-            text-align: center; /*Ajuda o elemento a ser centralizado, juntamente do block, assim ele não fica em inline*/
-            color: #666;
+            text-align: left; /*Alinha o texto à esquerda, dando um aspecto mais tradicional para a data*/
+            color: #6C757D;
             font-size: 12px;
-            margin: 6px 0 10px;
+            margin: 4px 0 12px;
+            margin-left: 52px; /*Cria um recuo para a data, alinhando com o início do nome do usuário, considerando a largura da foto e o gap*/
         }
-
-        /*As estrelas, o conjunto*/
+             /*As estrelas, o conjunto*/
 
         .stars {
             display: flex;
             gap: 4px;
             justify-content: center;
             list-style: none;
-            margin: 0 0 12px;
+            margin: 0 0 16px;
             padding: 0;
         }
 
@@ -105,94 +262,113 @@
         .star {
             width: 20px;
             height: 20px;
-            background-color: orange;
+            background-color: #FFB000;
             clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); /*Cálculo das coordenadas da estrela*/
         }
 
         /*Container da imagem do produto*/
         .img_box {
             width: 100%;
-            height: auto;
+            height: 160px;
             border-radius: 12px;
             display: block;
             overflow: hidden; /*Evita que a imagem transborda do contêiner*/
-            margin-bottom: 10px;
+            margin-bottom: 14px;
+            background-color: #FFFFFF; /*Fundo branco puro para destacar a imagem do produto*/
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.4); /*Sombra leve para dar profundidade*/
         }
 
         /*A imagem*/
          .img_box img {
             width: 100%;
-            height: 160px;
-            object-fit: cover; /* Mantém a proporção da imagem dentro do contêiner */
+            height: 100%;
+            object-fit: contain; /*contain garante que a imagem esteja completamente visível dentro do contêiner*/
             border-radius: 12px;
+            padding: 10px; /*Adiciona um pouco de espaço entre a imagem e as bordas do contêiner*/
             display: block;
+            box-sizing: border-box;
         }
 
         /*Área clicável maior*/
         .img_box a {
             display: block;
+            height: 100%;
+            width: 100%;
         }
 
         /*Div do nome e da marca*/
          .titulo_descricao {
             text-align: center;
-            margin: 8px 0 4px;
+            margin: 4px 0 12px;
         }
 
         /*Nome do produto*/
         .titulo_descricao span {
-            font-weight: bold;
+            font-weight: 700;
             font-size: 15px;
             text-transform: uppercase;
-            color: #111;
+            color: #6c757d;
+            letter-spacing: 1px;
         }
 
          .titulo_descricao p {
-            margin: 2px 0 0; /*É a mesma coisa que margin-top: 2px; margin-right: 0; margin-bottom: 0; margin-left: 0;*/
-            font-size: 19px;
-            font-weight: 300;
-            color: #555;
+            margin: 4px 0 0; /*É a mesma coisa que margin-top: 2px; margin-right: 0; margin-bottom: 0; margin-left: 0;*/
+            font-size: 16px;
+            font-weight: 600;
+            color: #11367A;     
         }
 
         /*P é o elemento filho direto das avaliações*/
         .avaliações > p {
             font-size: 16px;
-            color: #444;
+            color: #2B303A;
             line-height: 1.5;
             margin: 8px 0 0;
         }
 
         /*Botões do glider*/
         .glider-prev,.glider-next {
-            background-color: #db5375;
-            border: 1px solid #CE7DA5;
-            color: white;
-            padding: 10px 16px;
+            position: absolute;
+            border: 1px solid #2A9D8F;
+            color: #2A9D8F;
+            padding: 10px;
             cursor: pointer;
             font-size: 14px;
             border-radius: 8px;
             position: absolute;
-            top: 50%; /*Metada a altura do pai conteiner*/
-            transform: translateY(-50%); /*Desloca o elemento 50% da sua própria altura para cima*/
+            
             z-index: 10; /*Empilha o elemento acima dos outros*/
             transition: background-color 0.2s ease;
-        }
 
+            /*Cria círculo perfeito*/
+            width: 40px;
+            height: 40px;
+            background-color: #ffffff; /* Fundo branco para destacar do azul-pastel */
+            border-radius: 50%;
+            top: 50%; /*Metada a altura do pai conteiner*/
+            transform: translateY(-50%); /*Desloca o elemento 50% da sua própria altura para cima*/
+        }
 
         .glider-prev { 
-            left: -10px; 
+            left: 20px; 
         }
         .glider-next { 
-            right: -10px; 
+            left: 20px; 
         }
 /*Efeito do mouse sobre os botões*/
         .glider-prev:hover,.glider-next:hover {
-            background-color: #CE7DA5;
+            background-color:#2A9D8F;
+            color: #ffffff;
+            transform: translateY(-50%) scale(1.1); /*Aumenta o tamanho do botão ao passar o mouse, dando um feedback visual*/  
         }
 
         .glider-prev.disabled,.glider-next.disabled {
             opacity: 0.3;
             cursor: default;
+            background-color:#f4f8fa;
+            color: #6c757d;
+            border-color: #e0e0e0;
+            transform: translateY(-50%) scale(1); /*Remove o efeito de aumento para botões desabilitados*/
         }
 
         /*Os pontos de navegação*/
@@ -208,7 +384,7 @@
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            background-color: #CE7DA5;
+            background-color: #5CA6C1;
             border: none;
             cursor: pointer;
             padding: 0;
@@ -216,7 +392,7 @@
         }
 
         .glider-dot.active {
-            background-color: #db5375;
+            background-color: #2A9D8F;
             transform: scale(1.3);
         }
 
@@ -224,12 +400,26 @@
 
         @media (max-width: 600px) {
             .glider-prev { 
-                left: 0;
+                left: 10px;
              }
             .glider-next { 
-                right: 0; 
+                right: 10px; 
             }
+            .glider-contain {
+               margin: 0 auto; /*Reduz a margem lateral para caber melhor em telas pequenas*/
+                padding:0 15px; /*Adiciona um pouco de padding para evitar que os botões fiquem muito próximos das bordas da tela*/
+                box-sizing: border-box; /*Garante que o padding seja incluído no cálculo da largura total do container, evitando overflow*/
+            }
+
+            .glider-dot {
+                width: 12px;
+                height: 12px;
+            }
+
+            .glider-track{
+                gap: 20px; /*Aumenta o espaçamento entre os slides para melhor usabilidade no celular*/
         }
+    }
 
         /*Botão de contato com o vendedor*/
     #contato-vendedor {
@@ -240,20 +430,86 @@
         margin-left: auto;
         margin-right: auto;
         padding: 10px 15px;
-        background-color: #db5375;
+        background-color: #2A9D8F;
         color: white;
-        width: 250px;
+        width: 260px;
         text-decoration: none;
         font-size: 18px;
-        border-radius: 8px;
+        border-radius: 12px;
         transition: background-color 0.2s ease;
         text-transform: uppercase;
         font-weight: bold;
+        letter-spacing: 1px;
             }
 
         #contato-vendedor:hover {
-            background-color: #CE7DA5;
+            background-color: #1B6E73;
             transform:scale(1.05);
         }
 
-       
+        #contato-vendedor:active {
+            background-color: #1B6E73;
+            transform:scale(0.95);
+        }
+
+        /*Linha divisória*/
+        hr {
+            border: none;
+            border-top: 1px solid #1B6E73;
+            margin: 40px auto;
+            width: 80%;
+        }
+
+        /*Conteiner intro*/
+
+        .intro-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+           align-items: center;
+            text-align: center;
+            gap: 12px;
+            margin-bottom: 40px;
+            padding: 0 20px;
+        }
+
+        @media (max-width: 768px) {
+            .intro-container {
+                grid-template-columns: 1fr; /* No celular, os elementos ficam um embaixo do outro */
+            }
+        }
+
+        /*Blockquote para transmitir a mensagem*/
+
+        blockquote {
+            font-size: 1.2rem;
+            letter-spacing: 0.5px;
+            font-style: italic;
+            color:#111111;
+            margin: 40px 0;
+            padding-left: 1.2rem;
+            border-left: 4px solid #2A9D8F;
+            align-self: start; /*Alinha o blockquote ao início da coluna, dando um aspecto mais tradicional e elegante*/
+        }
+
+        /*Why choose us*/
+       .cards{
+        background-color: rgba(244, 248, 250, 0.2); /*Off-White Gelo com um pouco de transparência para suavizar o fundo*/
+        border-radius: 16px;
+        padding: 10px 10px;     
+        display: grid;
+        margin-top: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+       }
+
+       .card::before {
+    content: "✓"; /*Adiciona um símbolo de check antes de cada item da lista*/
+    color: green; /*Define a cor do símbolo de check*/
+    margin-right: 10px; /*Adiciona espaço entre o símbolo e o texto*/
+       }
+
+       @media (max-width: 768px) {
+        .cards {
+            grid-template-columns: 1fr; 
+        }
+    }
