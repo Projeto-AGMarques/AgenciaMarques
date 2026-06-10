@@ -10,7 +10,7 @@
         section {
             overflow: hidden;
             padding: 40px 20px 60px;
-  background: linear-gradient(to bottom, #5CA6C1 5%, #97C7D8 60%, #97C7D8 100%);
+  background: linear-gradient(to bottom, #5CA6C1 5%, #97C7D8 20%, #97C7D8 100%);
 
         }
 
@@ -457,7 +457,7 @@
         hr {
             border: none;
             border-top: 1px solid #1B6E73;
-            margin: 40px auto;
+            margin: 30px auto;
             width: 80%;
         }
 
@@ -465,12 +465,12 @@
 
         .intro-container {
             display: grid;
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 1fr;
            align-items: center;
             text-align: center;
-            gap: 10px;
-            margin-bottom: 40px;
-            padding: 0 20px;
+            /*gap: 10px;*/
+            margin-bottom: 20px;
+            padding: 0 10px;
             margin-left: auto;
             margin-right: auto;
         }
