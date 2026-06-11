@@ -5,45 +5,55 @@
 @import "../components/footer/footer.css";
 
 /* Aqui são as variáveis de cores globais */
-:root{
-    --cor-orange: #FFC35C;
-    --cor-blue: #11367A;
-    --cor-blue-light: #7CAAFF;
-    --cor-purple: #4533CD;
-    --cor-header: linear-gradient(90deg, #FFC35C 0%, #F2203E 100%);
+:root {
+  --cor-white-yellow: #f8f5e0;
+  --cor-orange: #ffc35c;
+  --cor-blue: #11367a;
+  --cor-blue-light: #7caaff;
+  --cor-purple: #4533cd;
+  --cor-yellow-dark: rgb(100, 52, 1);
+  --cor-black: rgb(0, 0, 0);
+  --cor-header: linear-gradient(90deg, #ffc35c 0%, #f2203e 100%);
+  --font-family-text: "Times New Roman", Times, serif;
+  --font-family-header: Andale Mono, monospace;
 }
 
 /* Essa propriedade abaixo serve para pré-configurar a renderização web em qualquer navegador */
 
-
 /* #region Padronização: p, h1, h2, h3*/
-p, h1, h2, h3 {
-    font-family: 'Times New Roman', Times, serif;
+p,
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-text);
 }
 
 p {
-    font-size: clamp(0.5rem, 1rem, 1.5rem);    
-    color: white
+  font-size: clamp(0.5rem, 1rem, 1.5rem);
+  color: white;
 }
 /* #endregion */
 
-*{ 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Não mexer nesse body */
-body{
-    background-color: var(--cor-blue);
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+body {
+  background-color: var(--cor-blue);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-
-
+header {
+  margin: 0px;
+  width: 100%;
+  height: 8vh;
+}
