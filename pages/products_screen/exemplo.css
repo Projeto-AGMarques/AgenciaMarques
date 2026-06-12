@@ -478,7 +478,7 @@
            align-items: center;
             text-align: center;
             /*gap: 10px;*/
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             padding: 0 10px;
             margin-left: auto;
             margin-right: auto;
@@ -489,7 +489,6 @@
                 grid-template-columns: 1fr; /* No celular, os elementos ficam um embaixo do outro */
             }
         }
-
          /*Texto introdutório*/
 
         /*Blockquote para transmitir a mensagem*/
@@ -499,7 +498,7 @@
             letter-spacing: 0.5px;
             font-style: italic;
             color:#111111;
-            margin: 20px 0;
+            margin: 40px 0;
             padding-left: 1.2rem;
             border-left: 4px solid #2A9D8F;
             align-self: start; /*Alinha o blockquote ao início da coluna, dando um aspecto mais tradicional e elegante*/
