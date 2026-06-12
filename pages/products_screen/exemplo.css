@@ -299,23 +299,32 @@
 
         /*Div do nome e da marca*/
          .titulo_descricao {
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 400px;
+            padding: 10px;            
             margin: 4px 0 12px;
+            margin-bottom: 10px;
         }
 
         /*Nome do produto*/
         .titulo_descricao span {
-            font-weight: 700;
+            font-weight: 800;
             font-size: 15px;
             text-transform: uppercase;
             color: #6c757d;
             letter-spacing: 1px;
+            text-align: center;
         }
 
          .titulo_descricao p {
             margin: 4px 0 0; /*É a mesma coisa que margin-top: 2px; margin-right: 0; margin-bottom: 0; margin-left: 0;*/
             font-size: 16px;
-            font-weight: 600;
+            font-weight: 700;
+            margin-bottom: 6px;
+            letter-spacing: 0.5px;
             color: #11367A;     
         }
 
@@ -323,8 +332,8 @@
         .avaliações > p {
             font-size: 16px;
             color: #2B303A;
-            line-height: 1.5;
-            margin: 8px 0 0;
+            line-height: 1.6;
+            margin: 0;
         }
 
         /*Botões do glider*/
@@ -469,7 +478,7 @@
            align-items: center;
             text-align: center;
             /*gap: 10px;*/
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             padding: 0 10px;
             margin-left: auto;
             margin-right: auto;
@@ -478,23 +487,6 @@
         @media (max-width: 768px) {
             .intro-container {
                 grid-template-columns: 1fr; /* No celular, os elementos ficam um embaixo do outro */
-            }
-        }
-
-        /*Imagem*/
-        .intro-container img {
-            width: 100%;
-            max-width: 400px;
-            object-fit: cover;
-            border-radius: 16px;
-            border-style: none;
-            box-shadow: 0 4px 15px rgba(29, 42, 68, 0.05);
-            margin: 0 auto; /*Centraliza a imagem dentro da coluna*/
-        }
-
-        @media (max-width: 768px) {
-            .intro-container img {
-                max-width: 100%; /* No celular, a imagem ocupa toda a largura disponível */
             }
         }
 
@@ -507,7 +499,7 @@
             letter-spacing: 0.5px;
             font-style: italic;
             color:#111111;
-            margin: 40px 0;
+            margin: 20px 0;
             padding-left: 1.2rem;
             border-left: 4px solid #2A9D8F;
             align-self: start; /*Alinha o blockquote ao início da coluna, dando um aspecto mais tradicional e elegante*/
