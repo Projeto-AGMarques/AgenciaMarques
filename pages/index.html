@@ -5,24 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agencia Marques</title>
     <link rel="stylesheet" href="../global/global.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
 </head>
 <body>
     <header></header>
 
+    
     <section id="home"></section>
     
     <section id="about_company"></section>
     
-    <section id="faq"></section>
     
     <section id="about_local"></section>
-
+    
     <section id="products_screen"></section>
+    
+    <section id="faq"></section>
 
 
     <h1 id="Warning_main">Em Desenvolvimento...</h1>
 
     <script type="module" src="../global/renderGlobal.js"></script>
+    
+    <!-- Glider abaixo. -->
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+
+    <script>
+        //Function do Glider.js, ela configura o carrossel, definindo quantos slides mostrar, quantos rolar, se é arrastável, os botões de navegação e a responsividade
+        new Glider(document.querySelector('.glider'), {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            draggable: true,
+            dots: '.dots',
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            },
+            //O slidesToShow é o número de slides a mostrar, o slidesToScroll é o número de slides a rolar quando clicar nos botões ou arrastar, o draggable permite arrastar os slides, os dots são as abas de navegação e os arrows são os botões de navegação.
+            //O breakpoint é a largura da tela, e o settings é o que muda quando a tela atinge esse breakpoint, é semelhante a min-width em CSS, mas aqui é definido o número de slides a mostrar e a rolar para cada breakpoint
+            responsive: [
+                { breakpoint: 600,  settings: { slidesToShow: 2, slidesToScroll: 1 } },
+                { breakpoint: 900,  settings: { slidesToShow: 3, slidesToScroll: 1 } },
+                { breakpoint: 1200, settings: { slidesToShow: 4, slidesToScroll: 1 } }
+            ]
+        });
+        
+    </script>
 </body>
 
 </html>

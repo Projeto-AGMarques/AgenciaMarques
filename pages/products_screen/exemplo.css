@@ -1,17 +1,8 @@
-@import "../../global/global.css" ;
-
-/*Elementos da página*/
-/*Esse asterisco seleciona todos os elementos da página*/
-/*Adiciona antes e depois */
-*, *::before, *::after {
-            box-sizing: border-box;
-        }
+@import "../../global/global.css";
         
-        section {
+        .screenProdutos {
             overflow: hidden;
             padding: 40px 20px 60px;
-  background: linear-gradient(to bottom, #5CA6C1 5%, #97C7D8 20%, #97C7D8 100%);
-
         }
 
         /*Título da seção, "Avaliações de Produtos" */
@@ -27,7 +18,7 @@
             margin-bottom: 40px;
         }    
 
- .produtos-titulo {
+        .produtos-titulo {
             font-weight: bold;
             font-size: 24px;
             margin: 0;
@@ -515,7 +506,7 @@
         gap: 10px;
        }
 
-       .card::before {
+       .card-verify::before {
     content: "✓"; /*Adiciona um símbolo de check antes de cada item da lista*/
     color: green; /*Define a cor do símbolo de check*/
     margin-right: 10px; /*Adiciona espaço entre o símbolo e o texto*/

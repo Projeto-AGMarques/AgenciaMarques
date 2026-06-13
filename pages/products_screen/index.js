@@ -1,17 +1,5 @@
-new Glider(document.querySelector('.glider'), {
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  draggable: true,
-  dots: '.dots',
-  arrows: {
-    prev: '.glider-prev',
-    next: '.glider-next'
-  }
-});
-
-
 export const Screen_Produtos = `
-<section style="overflow: hidden">
+<section class="screenProdutos">
     <!--Título-->
 
 <div class= intro-container>
@@ -21,11 +9,6 @@ export const Screen_Produtos = `
     <blockquote> A Marques Magazini busca a transparência em suas vendas, desde a apresentação dos produtos até o pós vendas. A confiança e a honestidade são os pilares da nossa relação com os clientes. </blockquote>
 </div>
 
-<div class="intro-image">
-    <img src="" alt="Imagem de introdução" class="intro-img" width="400" height="300">
-</div>
-
-
 </div>
 
 <hr>
@@ -34,10 +17,10 @@ export const Screen_Produtos = `
     <h2 class="produtos-titulo">Nosso diferencial</h2>
 
     <div class="cards">
-<div class="card">Qualidade</div>
-<div class="card">Variedade</div>
-<div class="card">Descontos exclusivos</div>
-<div class="card">Garantia de Satisfação</div>
+<div class="card-verify">Qualidade</div>
+<div class="card-verify">Variedade</div>
+<div class="card-verify">Descontos exclusivos</div>
+<div class="card-verify">Garantia de Satisfação</div>
 </div>
 
 </div>
@@ -54,20 +37,20 @@ export const Screen_Produtos = `
     <article class="card-produto">
       <div class="container-imagem">
         <!-- Tag chamativa com o Crimson -->
-        <span class="tag-desconto">35% OFF</span>
-        <img src="https://tse3.mm.bing.net/th/id/OIP.5_bNVsx8EqE08FhxaKf_zwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="" class="foto-produto">
+        <span class="tag-desconto">20% OFF</span>
+        <img src="../../global/assets/telaProdutos/apiradorRoxo.jpeg" alt="" class="foto-produto">
       </div>
       
       <div class="conteudo-produto">
-        <h3 class="nome-produto">Ferro</h3>
-        <p class="descricao-produto">Garantia total de funcionamento pela nossa equipe.</p>
+        <h3 class="nome-produto"> Aspirador de Pó e Água</h3>
+        <p class="descricao-produto">Força bruta nas limpezas. Função Sopro integrada a função de aspiração dupla.</p>
         
         <div class="preco-container">
-          <span class="preco-antigo">R$ 2.999</span>
-          <span class="preco-atual">R$ 1.949</span>
+          <span class="preco-antigo">R$ 259,90</span>
+          <span class="preco-atual">R$ 207,92</span>
         </div>
         
-        <a href="#" class="btn-contato">Tenho Interesse</a>
+        <a href="https://wa.me/5519994581963?text=Ol%C3%A1!%20Tenho%20interesse%20em%20comprar%20na%20Agência%20Marques." class="btn-contato" target="_blank">Tenho Interesse</a>
       </div>
     </article>
 
@@ -75,20 +58,20 @@ export const Screen_Produtos = `
     <article class="card-produto">
       <div class="container-imagem">
         <!-- Tag chamativa com o Crimson -->
-        <span class="tag-desconto">35% OFF</span>
-        <img src="https://tse3.mm.bing.net/th/id/OIP.5_bNVsx8EqE08FhxaKf_zwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="" class="foto-produto">
+        <span class="tag-desconto">20% OFF</span>
+        <img src="../../global/assets/telaProdutos/panela.jpeg" alt="" class="foto-produto">
       </div>
       
       <div class="conteudo-produto">
-        <h3 class="nome-produto">Ferro</h3>
-        <p class="descricao-produto">Garantia total de funcionamento pela nossa equipe.</p>
+        <h3 class="nome-produto">Panela Elétrica Quadrada</h3>
+        <p class="descricao-produto">Frigideira profunda de alta performance. Ideal para fritar, assar, grelhar, refogar, cozinhar massas e até manter os alimentos aquecidos ao servir.</p>
         
         <div class="preco-container">
-          <span class="preco-antigo">R$ 2.999</span>
-          <span class="preco-atual">R$ 1.949</span>
+          <span class="preco-antigo">R$ 340</span>
+          <span class="preco-atual">R$ 272</span>
         </div>
         
-        <a href="#" class="btn-contato">Tenho Interesse</a>
+        <a href="https://wa.me/5519994581963?text=Ol%C3%A1!%20Tenho%20interesse%20em%20comprar%20na%20Agência%20Marques." class="btn-contato" target="_blank">Tenho Interesse</a>
       </div>
     </article>
 
@@ -97,20 +80,20 @@ export const Screen_Produtos = `
     <article class="card-produto">
       <div class="container-imagem">
         <!-- Tag chamativa com o Crimson -->
-        <span class="tag-desconto">35% OFF</span>
-        <img src="https://tse3.mm.bing.net/th/id/OIP.5_bNVsx8EqE08FhxaKf_zwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="" class="foto-produto">
+        <span class="tag-desconto">20% OFF</span>
+        <img src="../../global/assets/telaProdutos/cafeteira.jpeg" alt="" class="foto-produto">
       </div>
-      
+
       <div class="conteudo-produto">
-        <h3 class="nome-produto">Ferro</h3>
-        <p class="descricao-produto">Garantia total de funcionamento pela nossa equipe.</p>
+        <h3 class="nome-produto">Cafeteira Elétrica</h3>
+        <p class="descricao-produto">Garantia total de funcionamento pela nossa equipe. Grande variedade de modelos. Resistência a quedas e impactos.</p>
         
         <div class="preco-container">
-          <span class="preco-antigo">R$ 2.999</span>
-          <span class="preco-atual">R$ 1.949</span>
+          <span class="preco-antigo">R$ 186,50</span>
+          <span class="preco-atual">R$ 149,20</span>
         </div>
         
-        <a href="#" class="btn-contato">Tenho Interesse</a>
+        <a href="https://wa.me/5519994581963?text=Ol%C3%A1!%20Tenho%20interesse%20em%20comprar%20na%20Agência%20Marques." class="btn-contato" target="_blank">Tenho Interesse</a>
       </div>
     </article>
   </div>
@@ -144,15 +127,15 @@ export const Screen_Produtos = `
                         <li class="star"></li>
                     </ul>
                     <div class="img_box">
-                        <a href="#">
-                            <img src="https://images.pexels.com/photos/32168944/pexels-photo-32168944.jpeg" alt="Produto">
+                        <a href="https://wa.me/5519994581963?text=Ol%C3%A1!%20Tenho%20interesse%20em%20comprar%20na%20Agência%20Marques." target="_blank">
+                            <img src="../../global/assets/telaProdutos/fortg.jpeg" alt="Produto">
                         </a>
                     </div>
                     <div class="titulo_descricao">
-                        <span>Microondas</span>
-                        <p>SAMSUNG</p>
+                        <span>Moto Esmeril de Bancada</span>
+                        <p>FORTGPRO FG050</p>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem accusamus quam neque perferendis pariatur magnam ut dolore enim.</p>
+                    <p>O produto desempenha como prometido, é silencioso e com excelente custo benefício. Não me arrependo da aquisição!</p>
                 </div>
             </div>
 
@@ -173,15 +156,15 @@ export const Screen_Produtos = `
                         <li class="star"></li>
                     </ul>
                     <div class="img_box">
-                        <a href="#">
-                            <img src="https://www.dekotool.com.br/imagens/large/dkrh24b70-02-63ef7cf8c0944.jpeg" alt="Produto">
+                        <a href="https://wa.me/5519994581963?text=Ol%C3%A1!%20Tenho%20interesse%20em%20comprar%20na%20Agência%20Marques." target="_blank">
+                            <img src="../../global/assets/telaProdutos/assadeira.jpeg" alt="Produto">
                         </a>
                     </div>
                     <div class="titulo_descricao">
-                        <span>Martelete Combinado</span>
-                        <p>Deko Brasil</p>
+                        <span>Panela Elétrica Bioceramic</span>
+                        <p>Oster Gran Sabo</p>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem accusamus quam neque perferendis pariatur magnam ut dolore enim.</p>
+                    <p>Superou minhas expectativas. Cozimento mais rápido que uma panela tradicional. Tamanho ideal. Recomendo!</p>
                 </div>
             </div>
 
@@ -202,15 +185,15 @@ export const Screen_Produtos = `
                         <li class="star"></li>
                     </ul>
                     <div class="img_box">
-                        <a href="#">
-                            <img src="https://m.media-amazon.com/images/I/71Yh9YZYVJL._AC_SX679_.jpg" alt="Produto">
+                        <a href="https://wa.me/5519994581963?text=Ol%C3%A1!%20Tenho%20interesse%20em%20comprar%20na%20Agência%20Marques." target="_blank">
+                            <img src="../../global/assets/telaProdutos/serra.jpeg" alt="Produto">
                         </a>
                     </div>
                     <div class="titulo_descricao">
-                        <span>Ventilador</span>
-                        <p>VentiSOl</p>
+                        <span>Serra Mármore Portátil</span>
+                        <p>LiTH Ferramentas</p>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem accusamus quam neque perferendis pariatur magnam ut dolore enim.</p>
+                    <p>Perfeita para pequenas reformas. Nem precisei alugar um maquinário caro para cortar pisos em casa.</p>
                 </div>
             </div>
 
@@ -231,15 +214,15 @@ export const Screen_Produtos = `
                         <li class="star"></li>
                     </ul>
                     <div class="img_box">
-                        <a href="#">
-                            <img src="https://img.lojadomecanico.com.br/IMAGENS/21/224/127613/1566851253750.JPG" alt="Produto">
+                        <a href="https://wa.me/5519994581963?text=Ol%C3%A1!%20Tenho%20interesse%20em%20comprar%20na%20Agência%20Marques." target="_blank">
+                            <img src="../../global/assets/telaProdutos/cafeteira2.jpeg" alt="Produto">
                         </a>
                     </div>
                     <div class="titulo_descricao">
-                        <span>Serra mármore</span>
-                        <p>LITH</p>
+                        <span>Chaleira Elétrica</span>
+                        <p>Black+Decker Gourmand Gris</p>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem accusamus quam neque perferendis pariatur magnam ut dolore enim.</p>
+                    <p>Muito prática para tomar meus chimarrões à tarde. Consigo ajustar a temperatura da água manualmente. Ás vezes, nem preciso de garrafa térmica!</p>
                 </div>
             </div>
 
@@ -261,15 +244,16 @@ export const Screen_Produtos = `
                     </ul>
 
                     <div class="img_box">
-                        <a href="#">
-                            <img src="https://images.pexels.com/photos/32168944/pexels-photo-32168944.jpeg" alt="Produto">
+                        <a href="https://wa.me/5519994581963?text=Ol%C3%A1!%20Tenho%20interesse%20em%20comprar%20na%20Agência%20Marques." target="_blank">
+                            <img src="../../global/assets/telaProdutos/secadora.jpeg" alt="Produto">
                         </a>
                     </div>
                     <div class="titulo_descricao">
-                        <span>Microondas</span>
-                        <p>SAMSUNG</p>
+                        <span>Passadeira a Vapor Portátil</span>
+                        <p>Mondial Fast Steam </p>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem accusamus quam neque perferendis pariatur magnam ut dolore enim.</p>
+                    <p>  Me surpreendeu. Resultado final bem satisfatório, principalmente em tecidos mais finos e algodão. Muito mais prático e rápido.
+                    </p>
                 </div>
             </div>
 
@@ -285,30 +269,6 @@ export const Screen_Produtos = `
 
     <!--Entre em contato com o vendedor-->
 
-    <a href="" id = "contato-vendedor" target="_blank">Entrar em Contato</a>
+    <a href="https://wa.me/5519994581963?text=Ol%C3%A1!%20Tenho%20interesse%20em%20comprar%20na%20Agência%20Marques." id = "contato-vendedor" target="_blank">Entrar em Contato</a>
 </section>
-
-<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
-
-<script>
-    //Function do Glider.js, ela configura o carrossel, definindo quantos slides mostrar, quantos rolar, se é arrastável, os botões de navegação e a responsividade
-    new Glider(document.querySelector('.glider'), {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        draggable: true,
-        dots: '.dots',
-        arrows: {
-            prev: '.glider-prev',
-            next: '.glider-next'
-        },
-        //O slidesToShow é o número de slides a mostrar, o slidesToScroll é o número de slides a rolar quando clicar nos botões ou arrastar, o draggable permite arrastar os slides, os dots são as abas de navegação e os arrows são os botões de navegação.
-        //O breakpoint é a largura da tela, e o settings é o que muda quando a tela atinge esse breakpoint, é semelhante a min-width em CSS, mas aqui é definido o número de slides a mostrar e a rolar para cada breakpoint
-        responsive: [
-            { breakpoint: 600,  settings: { slidesToShow: 2, slidesToScroll: 1 } },
-            { breakpoint: 900,  settings: { slidesToShow: 3, slidesToScroll: 1 } },
-            { breakpoint: 1200, settings: { slidesToShow: 4, slidesToScroll: 1 } }
-        ]
-    });
-    
-</script>`
-
+`

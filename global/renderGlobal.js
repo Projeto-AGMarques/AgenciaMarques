@@ -1,10 +1,11 @@
 import {Screen_AboutLocal} from "../pages/about_local/index.js"
 import {Screen_FAQ} from "../pages/faq/index.js"
-import {accordionFAQ} from "../pages/faq/accordionAction.js"
-import {Screen_AboutCompany} from "../pages/about_company/index.js"   /* <-- DANDO ERRO SÓ DE IMPORTAR. */
-import {Component_Footer} from "../components/footer/footer.js";
-import {Screen_Produtos} from "../pages/products_screen/index.js";
+import {Screen_AboutCompany} from "../pages/about_company/index.js"
+import { Screen_Produtos } from "../pages/products_screen/index.js"; /* <--- Import */ 
 
+
+import {Component_Footer} from "../components/footer/footer.js";
+import {accordionFAQ} from "../pages/faq/accordionAction.js"
 
 //#region Variáveis do Index.html
 let home = document.getElementById("home");
@@ -16,10 +17,9 @@ let FAQ = document.getElementById("faq");
 
 home.innerHTML = Screen_AboutLocal;
 aboutCompany.innerHTML = Screen_AboutCompany;
-// productsScreen.innerHTML = Screen_Produtos;
+productsScreen.innerHTML = Screen_Produtos; /* <--- Import */
 FAQ.innerHTML = Screen_FAQ;
 FAQ.insertAdjacentHTML("afterend", Component_Footer);
 
 accordionFAQ();
-
 
