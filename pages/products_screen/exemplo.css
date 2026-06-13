@@ -10,7 +10,7 @@
         section {
             overflow: hidden;
             padding: 40px 20px 60px;
-  background: linear-gradient(to bottom, #5CA6C1 5%, #97C7D8 60%, #97C7D8 100%);
+  background: linear-gradient(to bottom, #5CA6C1 5%, #97C7D8 20%, #97C7D8 100%);
 
         }
 
@@ -64,6 +64,7 @@
 .card-produto {
   background-color: #F4F8FA; /* Off-White Gelo */
   border-radius: 16px;
+  border: 1px solid rgba(29, 42, 68, 0.1); /* Sombra leve para dar profundidade */
   overflow: hidden; /* Garante que a imagem não saia das bordas arredondadas */
   box-shadow: 0 4px 15px rgba(29, 42, 68, 0.05);
   display: flex;
@@ -298,23 +299,32 @@
 
         /*Div do nome e da marca*/
          .titulo_descricao {
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 400px;
+            padding: 10px;            
             margin: 4px 0 12px;
+            margin-bottom: 10px;
         }
 
         /*Nome do produto*/
         .titulo_descricao span {
-            font-weight: 700;
+            font-weight: 800;
             font-size: 15px;
             text-transform: uppercase;
             color: #6c757d;
             letter-spacing: 1px;
+            text-align: center;
         }
 
          .titulo_descricao p {
             margin: 4px 0 0; /*É a mesma coisa que margin-top: 2px; margin-right: 0; margin-bottom: 0; margin-left: 0;*/
             font-size: 16px;
-            font-weight: 600;
+            font-weight: 700;
+            margin-bottom: 6px;
+            letter-spacing: 0.5px;
             color: #11367A;     
         }
 
@@ -322,8 +332,8 @@
         .avaliações > p {
             font-size: 16px;
             color: #2B303A;
-            line-height: 1.5;
-            margin: 8px 0 0;
+            line-height: 1.6;
+            margin: 0;
         }
 
         /*Botões do glider*/
@@ -456,7 +466,7 @@
         hr {
             border: none;
             border-top: 1px solid #1B6E73;
-            margin: 40px auto;
+            margin: 30px auto;
             width: 80%;
         }
 
@@ -464,12 +474,14 @@
 
         .intro-container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
            align-items: center;
             text-align: center;
-            gap: 12px;
-            margin-bottom: 40px;
-            padding: 0 20px;
+            /*gap: 10px;*/
+            margin-bottom: 20px;
+            padding: 0 10px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         @media (max-width: 768px) {
@@ -477,6 +489,7 @@
                 grid-template-columns: 1fr; /* No celular, os elementos ficam um embaixo do outro */
             }
         }
+         /*Texto introdutório*/
 
         /*Blockquote para transmitir a mensagem*/
 
@@ -513,3 +526,5 @@
             grid-template-columns: 1fr; 
         }
     }
+
+
