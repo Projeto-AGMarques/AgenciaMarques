@@ -318,7 +318,7 @@ export const itensSlideHeader = `
 
             <!-- Item Sobre -->
             <li>
-                <a href="#">
+                <a href="#faq">
                     <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
                         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.999901 47.999901" id="svg4" version="1.1">
@@ -327,13 +327,13 @@ export const itensSlideHeader = `
                             style="fill: var(--cor-orange); fill-rule: evenodd; stroke: var(--cor-orange); stroke-width: 0.56690001; stroke-linecap: butt; stroke-linejoin: miter; stroke-dasharray: none;"
                             d="m 23.1331,4.3734 c 10.7879,0 19.5333,8.7454 19.5333,19.5333 0,10.7879 -8.7454,19.5333 -19.5333,19.5333 -10.7879,0 -19.5332,-8.7454 -19.5332,-19.5333 0,-10.7879 8.7453,-19.5333 19.5332,-19.5333 z m 2.0059,29.5894 c 0.09,-1.125 -0.9,-2.1149 -2.0249,-2.1599 -1.1696,0.0311 -1.9049,1.095 -1.8899,1.9798 -0.015,1.11 0.8249,1.995 1.8449,1.9801 1.05,-0.015 1.9649,-0.6601 2.0699,-1.8 z M 24.0644,12.6254 c -4.8177,-0.5771 -7.5452,3.7591 -7.4127,6.4088 0.9193,1.0832 2.4984,0.883 3.4177,0.0596 -0.2328,-1.3616 0.781,-3.2 3.3716,-3.3149 1.6012,0.11 2.8724,1.3566 3.0434,2.7501 0.1345,1.4422 -0.281,2.5911 -1.1366,3.1168 -4.0702,2.0412 -3.9235,4.9991 -3.7402,7.2236 l 3.1535,-0.0367 c 0.0733,-1.2833 -0.1101,-3.3368 2.42,-4.6202 2.3101,-1.0022 2.7501,-4.1313 2.5302,-5.6469 -0.1223,-2.2733 -2.2246,-5.9035 -5.6469,-5.9402 z" />
                     </svg>
-                    <p class="textMobile_home">Sobre</p>
+                    <p class="textMobile_home">FAQ</p>
                 </a>
             </li>
 
             <!-- Item Contato -->
             <li>
-                <a href="#">
+                <a href="#about_company">
                     <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
                         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.999901 47.999901" id="svg12" version="1.1">
@@ -354,48 +354,13 @@ export const itensSlideHeader = `
                             style="fill:var(--cor-orange);fill-rule:evenodd;stroke:var(--cor-orange);stroke-width:0.56690001;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none"
                             d="m 22.112,15.6537 c -4.3115,0.7206 -4.7809,-3.0306 -7.2899,-4.1803 1.8637,-0.9473 3.7741,-0.9396 5.3116,-0.3261 1.2037,0.7144 2.3122,3.6988 1.9783,4.5064 z" />
                     </svg>
-                    <p class="textMobile_home">Contato</p>
+                    <p class="textMobile_home">Empresa</p>
                 </a>
-            </li>
-
-            <!-- Item Acessibilidade -->
-            <li id="btn_acessibilidade">
-                <a href="#">
-                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
-                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.999901 47.999901" id="svg10" version="1.1">
-                        <defs id="defs14" />
-                        <path id="path2"
-                            style="fill:var(--cor-orange);fill-rule:evenodd;stroke:var(--cor-orange);stroke-width:0.56690001;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none"
-                            d="m 33.9853,6.2956 c 1.8865,0 3.4158,1.5194 3.4158,3.3938 0,1.8744 -1.5293,3.3939 -3.4158,3.3939 -1.8864,0 -3.4157,-1.5195 -3.4157,-3.3939 0,-1.8744 1.5293,-3.3938 3.4157,-3.3938 z" />
-                        <path id="path4"
-                            style="fill: transparent;fill-rule:evenodd;stroke:var(--cor-orange);stroke-width:0.56690001;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none"
-                            d="m 30.8063,30.7097 c 0.9345,1.6773 -3.123,0.3797 -3.1949,1.5539 -1.1982,5.9256 -6.1255,7.6906 -9.074,7.6906 -6.9532,-0.7716 -9.055,-4.9144 -9.1744,-9.0319 -0.3355,-4.1695 3.366,-8.5416 7.8104,-8.9328 3.0433,-0.9585 1.6036,-3.98 0.9806,-5.2261 -0.9106,-0.623 -3.1869,-0.7429 -2.7317,-1.8691 l 5.5354,-0.0719 -1.5097,10.8551 c -0.5032,3.2829 1.3658,4.6967 3.6663,4.8884 z" />
-                        <path id="path6"
-                            style="fill:var(--cor-orange);fill-rule:evenodd;stroke:var(--cor-orange);stroke-width:0.56690001;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none"
-                            d="m 30.0003,13.1052 -6.7002,0.1314 c -1.4597,0.1461 -2.3939,0.5547 -3.4595,1.7517 l -3.2844,7.138 c -0.2773,1.3137 1.0656,1.9707 2.0582,1.1824 l 3.0654,-6.306 c 0.9197,-1.1531 1.9707,-1.2116 3.4158,-1.0948 l -4.0726,8.627 c -0.978,3.2406 1.5035,4.8609 2.5837,4.9923 l 10.9917,0.1313 -3.9413,7.8387 c -0.4525,1.8404 1.635,2.3063 2.4524,1.2262 l 4.204,-8.3205 c 0.3795,-1.1823 -0.0292,-3.0654 -2.1458,-3.4157 l -6.2622,-0.0876 4.204,-9.021 c 0.5401,-3.2114 -1.1094,-2.5692 -3.1092,-4.7734 z" />
-                        <path id="path8"
-                            style="fill:var(--cor-orange);fill-rule:evenodd;stroke:var(--cor-orange);stroke-width:0.56690001;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none"
-                            d="m 25.2452,32.2978 c -4.1897,0.2089 -8.9063,-0.2497 -7.0425,-8.2794 -3.8808,0.2936 -6.6892,3.0383 -6.8169,6.8553 -0.1787,4.0467 3.6255,6.7148 6.8169,6.8552 3.7532,-0.166 6.8128,-2.4313 7.0425,-5.4311 z" />
-                    </svg>
-                    <p class="textMobile_home">Acessibilidade</p>
-                </a>
-                <ul id="options_acessibilidade">
-                    <li>
-                        <p href="#" id="contraste">Modo Escuro</p>
-                    </li>
-                    <li>
-                        <p href="#" id="aumentar-fonte">Aumentar Fonte</p>
-                    </li>
-                    <li>
-                        <p href="#" id="diminuir-fonte">Diminuir Fonte</p>
-                    </li>
-                </ul>
             </li>
 
             <!-- Item Local -->
             <li>
-                <a href="#">
+                <a href="#about_local">
                     <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
                         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.999901 47.999901" id="svg4" version="1.1">
@@ -570,4 +535,42 @@ export function initAccessibilityMenu() {
     }
   });
 }
+
+
+
+/* ====== Botão de Acessibilidade - Removido =======
+<li id="btn_acessibilidade">
+    <a href="#">
+        <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.999901 47.999901" id="svg10" version="1.1">
+            <defs id="defs14" />
+            <path id="path2"
+                style="fill:var(--cor-orange);fill-rule:evenodd;stroke:var(--cor-orange);stroke-width:0.56690001;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none"
+                d="m 33.9853,6.2956 c 1.8865,0 3.4158,1.5194 3.4158,3.3938 0,1.8744 -1.5293,3.3939 -3.4158,3.3939 -1.8864,0 -3.4157,-1.5195 -3.4157,-3.3939 0,-1.8744 1.5293,-3.3938 3.4157,-3.3938 z" />
+            <path id="path4"
+                style="fill: transparent;fill-rule:evenodd;stroke:var(--cor-orange);stroke-width:0.56690001;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none"
+                d="m 30.8063,30.7097 c 0.9345,1.6773 -3.123,0.3797 -3.1949,1.5539 -1.1982,5.9256 -6.1255,7.6906 -9.074,7.6906 -6.9532,-0.7716 -9.055,-4.9144 -9.1744,-9.0319 -0.3355,-4.1695 3.366,-8.5416 7.8104,-8.9328 3.0433,-0.9585 1.6036,-3.98 0.9806,-5.2261 -0.9106,-0.623 -3.1869,-0.7429 -2.7317,-1.8691 l 5.5354,-0.0719 -1.5097,10.8551 c -0.5032,3.2829 1.3658,4.6967 3.6663,4.8884 z" />
+            <path id="path6"
+                style="fill:var(--cor-orange);fill-rule:evenodd;stroke:var(--cor-orange);stroke-width:0.56690001;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none"
+                d="m 30.0003,13.1052 -6.7002,0.1314 c -1.4597,0.1461 -2.3939,0.5547 -3.4595,1.7517 l -3.2844,7.138 c -0.2773,1.3137 1.0656,1.9707 2.0582,1.1824 l 3.0654,-6.306 c 0.9197,-1.1531 1.9707,-1.2116 3.4158,-1.0948 l -4.0726,8.627 c -0.978,3.2406 1.5035,4.8609 2.5837,4.9923 l 10.9917,0.1313 -3.9413,7.8387 c -0.4525,1.8404 1.635,2.3063 2.4524,1.2262 l 4.204,-8.3205 c 0.3795,-1.1823 -0.0292,-3.0654 -2.1458,-3.4157 l -6.2622,-0.0876 4.204,-9.021 c 0.5401,-3.2114 -1.1094,-2.5692 -3.1092,-4.7734 z" />
+            <path id="path8"
+                style="fill:var(--cor-orange);fill-rule:evenodd;stroke:var(--cor-orange);stroke-width:0.56690001;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none"
+                d="m 25.2452,32.2978 c -4.1897,0.2089 -8.9063,-0.2497 -7.0425,-8.2794 -3.8808,0.2936 -6.6892,3.0383 -6.8169,6.8553 -0.1787,4.0467 3.6255,6.7148 6.8169,6.8552 3.7532,-0.166 6.8128,-2.4313 7.0425,-5.4311 z" />
+        </svg>
+        <p class="textMobile_home">Acessibilidade</p>
+    </a>
+    <ul id="options_acessibilidade">
+        <li>
+            <p href="#" id="contraste">Modo Escuro</p>
+        </li>
+        <li>
+            <p href="#" id="aumentar-fonte">Aumentar Fonte</p>
+        </li>
+        <li>
+            <p href="#" id="diminuir-fonte">Diminuir Fonte</p>
+        </li>
+    </ul>
+</li>
+*/
 

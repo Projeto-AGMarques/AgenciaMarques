@@ -45,7 +45,7 @@ export const Screen_FAQ = `
                 </button>
 
                 <div class="infoAccordion_faq infoAccordionDisable_faq">
-                    <p>Informações sobre pedidos e entregas...</p>
+                    <p>Nossa operação é focada em vendas online, por isso trabalhamos com envios para diversas regiões. Após a confirmação do pedido, o produto é preparado e enviado pelos serviços de entrega disponíveis em nossos canais de venda. O prazo de entrega pode variar de acordo com a localização do cliente.</p>
                 </div>
             </div>
 
@@ -59,7 +59,7 @@ export const Screen_FAQ = `
                 </button>
 
                 <div class="infoAccordion_faq infoAccordionDisable_faq">
-                    <p>Informações sobre pedidos e entregas...</p>
+                    <p>Aceitamos PIX, boleto bancário, cartão de crédito e cartão de débito. Caso deseje utilizar outra forma de pagamento, entre em contato conosco para verificar a disponibilidade.</p>
                 </div>
             </div>
 
@@ -73,7 +73,7 @@ export const Screen_FAQ = `
                 </button>
 
                 <div class="infoAccordion_faq infoAccordionDisable_faq">
-                    <p>Informações sobre pedidos e entregas...</p>
+                    <p>Atualmente nossa operação funciona junto à loja parceira da família, onde mantemos parte do estoque e realizamos o gerenciamento das vendas online. Alguns produtos ficam expostos no local, permitindo um ponto de apoio para clientes e retiradas. Nosso foco principal continua sendo o atendimento online, mas estamos trabalhando para futuramente inaugurar um espaço exclusivo da Marques Magazini.</p>
                 </div>
             </div>
 
@@ -87,7 +87,7 @@ export const Screen_FAQ = `
                 </button>
 
                 <div class="infoAccordion_faq infoAccordionDisable_faq">
-                    <p>Informações sobre pedidos e entregas...</p>
+                    <p>Caso seja necessário realizar uma devolução, entre em contato com nossa equipe para receber as orientações. Cada solicitação é analisada de acordo com as condições do produto e os prazos previstos pela legislação vigente e pelas políticas dos canais de venda utilizados.</p>
                 </div>
             </div>
 
