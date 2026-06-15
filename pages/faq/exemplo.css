@@ -2,7 +2,7 @@
 
 .titlePage_faq{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
     color: white
 }
 
@@ -41,13 +41,17 @@
     }
     
     .textCard_faq{
+        margin-top: -10px;
         width: 100%;
-        /* text-wrap: true; */
         text-align: center;
-        color: black;
+        color: var(--cor-blue-light);
+        font-weight: bold;
         justify-content: center;
         align-items: center;
         margin-bottom: 5px;
+        text-wrap: true;
+        font-size: 1rem;
+        /* text-shadow: 1px 1px 10px bla; */
     }
 }
 

@@ -8,10 +8,10 @@ footer{
     background-color: var(--cor-purple);
     width: 100%;
     height: fit-content;
-    position: fixed;
-    bottom: 0;
-    z-index: 99;
+    z-index: 80;
     box-shadow: 0px -10px 100px black;
+    /* position: absolute;
+    bottom: 0; */
 }
 
 
@@ -24,7 +24,7 @@ footer{
 #firstLine_home{
     /* background-color: red; */
     height: 40px;
-    display: flex;
+    display: none;
     justify-content: end;
 
     div{
@@ -43,6 +43,7 @@ footer{
 /* #region SecondLine */
 
 #secondLine_home{
+    padding-block: 8px;
     margin-top: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -1,8 +1,9 @@
 @import "../../global/global.css";
 
 .screenProdutos {
+    margin-top: 25px;
     overflow: hidden;
-    padding: 40px 20px 60px;
+    padding: 40px 20px 20px;
 }
 
 /*Título da seção, "Avaliações de Produtos" */
@@ -519,9 +520,12 @@ small {
 /*Linha divisória*/
 hr {
     border: none;
-    border-top: 1px solid #1B6E73;
-    margin: 30px auto;
-    width: 80%;
+    border-top: 1px solid white;
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    justify-self: center;
+    align-self: center;
 }
 
 /*Conteiner intro*/

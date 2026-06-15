@@ -3,6 +3,7 @@
 @import "../pages/faq/exemplo.css";
 @import "../pages/about_company/exemplo.css";
 @import "../pages/products_screen/exemplo.css";
+@import "../pages/home/exemplo.css";
 
 @import "../components/footer/footer.css";
 @import "../components/header/header.css";
@@ -47,7 +48,7 @@ body{
     background-color: var(--cor-blue);
     display: flex;
     flex-direction: column;
-    padding-bottom: 100px;
+    padding-bottom: 25px;
     /* gap: 25px; */
 
     #Warning_main{
