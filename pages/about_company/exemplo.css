@@ -32,10 +32,12 @@
     /* background-color: red; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 
     h1{
+        padding-right: 5px;
+        margin-bottom: 10px;
         color: white;
         text-align: center;
         font-size: 24px;
@@ -43,9 +45,9 @@
     }
 
     p{
-        margin-top: 20px;
+        padding-right: 5px;
         font-size: 15px;
-        text-align: center;
+        text-align: justify;
     }
 }
 
@@ -100,7 +102,8 @@
 
 #textEffect_company{
     /* background-color: red; */
-    color: var(--cor-blue-light);
+    color: var(--cor-orange);
+    text-shadow: 1px 1px 10px black;
     font-size: 24px;
     font-weight: bold;
     margin-right: 10px;

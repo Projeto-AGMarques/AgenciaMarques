@@ -40,11 +40,14 @@
         padding: 10px;
     }
     
-    p{
+    .textCard_faq{
         width: 100%;
+        /* text-wrap: true; */
         text-align: center;
-        align-self: flex-start;
         color: black;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
     }
 }
 

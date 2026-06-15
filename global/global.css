@@ -5,6 +5,7 @@
 @import "../pages/products_screen/exemplo.css";
 
 @import "../components/footer/footer.css";
+@import "../components/header/header.css";
 
 /* Aqui são as variáveis de cores globais */
 :root{
@@ -20,12 +21,18 @@
 
 /* #region Padronização: p, h1, h2, h3*/
 p, h1, h2, h3 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 p {
+    font-size: clamp(0.5rem, 0.8rem, 1.5rem);    
+    color: white;
+}
+
+blockquote{
     font-size: clamp(0.5rem, 1rem, 1.5rem);    
-    color: white
+    color: white;
+    
 }
 /* #endregion */
 
@@ -40,7 +47,7 @@ body{
     background-color: var(--cor-blue);
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    /* gap: 25px; */
 
     #Warning_main{
         display: none;

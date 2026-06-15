@@ -272,3 +272,28 @@ export const Screen_Produtos = `
     <a href="https://wa.me/5519994581963?text=Ol%C3%A1!%20Tenho%20interesse%20em%20comprar%20na%20Agência%20Marques." id = "contato-vendedor" target="_blank">Entrar em Contato</a>
 </section>
 `
+
+export function initGlider() {
+    const gliderElement = document.querySelector(".glider");
+
+    if (!gliderElement) {
+        console.warn("Elemento .glider não encontrado");
+        return;
+    }
+
+    new Glider(gliderElement, {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        draggable: true,
+        dots: ".dots",
+        arrows: {
+            prev: ".glider-prev",
+            next: ".glider-next"
+        },
+        responsive: [
+            { breakpoint: 600, settings: { slidesToShow: 2, slidesToScroll: 1 } },
+            { breakpoint: 900, settings: { slidesToShow: 3, slidesToScroll: 1 } },
+            { breakpoint: 1200, settings: { slidesToShow: 4, slidesToScroll: 1 } }
+        ]
+    });
+}
