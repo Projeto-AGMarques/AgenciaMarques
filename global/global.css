@@ -6,6 +6,7 @@
 
 /* Aqui são as variáveis de cores globais */
 :root {
+  --cor-white: rgb(244, 244, 244);
   --cor-white-yellow: #f8f5e0;
   --cor-orange: #ffc35c;
   --cor-blue: #11367a;
@@ -16,6 +17,7 @@
   --cor-header: linear-gradient(90deg, #ffc35c 0%, #f2203e 100%);
   --font-family-text: "Times New Roman", Times, serif;
   --font-family-header: Andale Mono, monospace;
+  --font-family-letring:system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 /* Essa propriedade abaixo serve para pré-configurar a renderização web em qualquer navegador */
