@@ -1,7 +1,8 @@
 // let aboutLocalScreen = document.getElementById("aboutLocal_Screen").innerHTML;
 
 
-export const Screen_AboutLocal = `<section id="aboutLocal_Screen">
+export const Screen_AboutLocal = `
+    <section id="aboutLocal_Screen">
         <div class="ShowMobile_local">
             <!-- Primeira Row -->
             <div class="Container_local" id="firstContainer">
@@ -11,14 +12,14 @@ export const Screen_AboutLocal = `<section id="aboutLocal_Screen">
                     <div class="circleBackgroundTitle_local">
                         <div class="circleTitle_local">
                             <h2>NOSSA UNIDADE</h2>
-                            <p>Aqui você retirar seu pedido!</p>
+                            <p id="textInBalll"">Aqui você retirar seu pedido!</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Imagem -->
                 <div class="imgContainer_local"> 
-                    <img src="../global/assets/photoLocal.png" alt="" class="img_local">
+                    <img src="./photoLocal.png" alt="" class="img_local">
                 </div>
             </div>
             
@@ -31,7 +32,7 @@ export const Screen_AboutLocal = `<section id="aboutLocal_Screen">
 
                 <div class="containerNull2_local">
                     <div class="circleBackgroundTitle_local" id="circleNullTwo">
-                        <img src="../global/assets/imgMen.svg" alt="">
+                        <img src="./Ellipse 2.svg" alt="">
                     </div>
                 </div>
 
@@ -76,8 +77,10 @@ export const Screen_AboutLocal = `<section id="aboutLocal_Screen">
                     ABRIR O GOOGLE MAPS
                 </a>
             </div>
+            
         </div>
     <h1 class="Warning_local">Em Desenvolvimento...</h1>
-</section>`;
+    </section>
+`
 
 console.log("Teste: ", Screen_AboutLocal);
