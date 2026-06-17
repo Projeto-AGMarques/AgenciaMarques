@@ -60,9 +60,9 @@
     text-shadow: 1px 1px 10px black;   
 }
 
-.circleTitle_local p{
+.circleTitle_local #textInBalll{
     width: 100%;
-    text-align: center;
+    justify-content: center;
     color: white;
     text-shadow: 1px 1px 10px black;   
 }
